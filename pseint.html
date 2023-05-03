@@ -1,0 +1,3996 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="Portafolio" content="Recopilacion de todos los talleres">   
+    <title>Talleres PSeInt</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link href="css/prism.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="js/jquery.js"></script>
+  </head>
+  <body>
+    <div class="header"></div>
+        <ul id="navigation">
+            <li class="inicio"><a href="index.html"><span>Inicio</span></a></li>
+            <li class="pseint"><a href="pseint.html"><span>Talleres PSeInt</span></a></li>
+            <li class="java"><a href="java.html"><span>Talleres Java</span></a></li>
+            <li class="cv"><a href="Informacion.html"><span>Hoja de vida</span></a></li>
+        </ul>
+		<div class="menu-wrapper">
+			<p>Menu</p>
+			<div class="menu2">
+			  <a href="#variables">Taller de variables e impresión</a>
+			  <a href="#condicionales">Taller de condicionales</a>
+			  <a href="#ciclos">Taller de ciclos</a>
+			  <a href="#arreglos">Taller de arreglos</a>
+			  <a href="#funciones">Taller de funciones</a>
+			</div>
+		  </div>
+	  
+    <section id="variables">
+        <article>
+                <h1>Taller de variables e impresión</h1>
+                <ol>
+                    <li>Realizar un programa el cual solicite su nombre y apellidos.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+                                        <code>
+Proceso punto1
+                                          
+    Definir nombre, apellido Como Caracter;
+                                          
+    Escribir "Por favor ingrese su nombre";
+    Leer nombre;
+                                          
+    Escribir "Por favor ingrese su apellido";
+    Leer apellido;
+                                      
+FinProceso
+                                          </code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Realizar un programa el cual solicite su nombre, apellidos, edad y estatura.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+                                        <code>
+Proceso punto2
+	
+    Definir nombre, apellido Como Caracter;
+    Definir edad Como Entero;
+    Definir estatura Como Real;
+
+    Escribir "Por favor ingrese su nombre";
+    Leer nombre;
+                                            
+    Escribir "Por favor ingrese su apellido";
+    Leer apellido;
+                                            
+    Escribir "Por favor ingrese su edad";
+    Leer edad;
+                                            
+    Escribir "Por favor ingrese su estatura";
+    Leer estatura;
+                                            
+FinProceso
+                                          </code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Realizar un programa el cual solicite su nombre y apellidos, también debe capturar nombre y apellidos de su padre y madre. Al finalizar debe imprimir en pantalla el siguiente mensaje "Yo [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del Padre].</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+                                        <code>
+Proceso punto3
+	
+    Definir nombre, apellido, nombrePadre, apellidoPadre, nombreMadre, apellidoMadre Como Caracter;
+                                            
+    Escribir "Por favor ingrese su nombre";
+    Leer nombre;
+                                            
+    Escribir "Por favor ingrese su apellido";
+    Leer apellido;
+                                            
+    Escribir "Por favor ingrese el nombre de su Padre";
+    Leer nombrePadre;
+                                            
+    Escribir "Por favor ingrese el apellido de su Padre";
+    Leer apellidoPadre;
+                                            
+    Escribir "Por favor ingrese el nombre de su Madre";
+    Leer nombreMadre;
+                                            
+    Escribir "Por favor ingrese el apellido de su Madre";
+    Leer apellidoMadre;
+                                            
+    Limpiar Pantalla;
+                                            
+    Escribir "Yo ", nombre, " ", apellido, ", soy hijo de ", nombreMadre, " ", apellidoMadre, " y ", nombrePadre, " ", apellidoPadre;
+
+FinProceso
+                                          </code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Realizar un programa el cual solicite el nombre de una ciudad capital y el país. Al finalizar debe imprimir en pantalla el siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital del país [Nombre del País]</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+                                        <code>
+Proceso punto4
+	
+    Definir ciudadCapital, pais Como Caracter;
+                                            
+    Escribir "Ingrese el nombre de una ciudad capital";
+    Leer ciudadCapital;
+                                            
+    Escribir "Ingrese el país de dicha ciudadd";
+    Leer pais;
+                                            
+    Limpiar Pantalla;
+                                            
+    Escribir "La ciudad de ", ciudadCapital, ", ", "es la capital del país ", pais; 
+                                            
+FinProceso
+                                          </code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Realizar un programa el cual solicite el nombre de su mascota, edad de la mascota, el tipo de mascota y su nombre completo. Al finalizar el sistema debe e imprimir en pantalla el siguiente mensaje: [Nombre de Mascota] es un(a) [Tipo de Mascota], el cual, tiene [Edad de la Mascota] años de edad y [Nombre Completo] es actualmente su dueño(a).</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto5
+	
+	Definir nombreMascota, nombreDueno, tipoMascota Como Caracter;
+	Definir edadMascota Como Entero;
+	
+	Escribir "Por favor ingrese el nombre de su mascota";
+	Leer nombreMascota;
+	
+	Escribir "Por favor ingrese la edad de su mascota";
+	Leer edadMascota;
+	
+	Escribir "Por favor ingrese el tipo de mascota";
+	Leer tipoMascota;
+	
+	Escribir "Por favor ingrese su nombre completo";
+	Leer nombreDueno;
+	
+	Limpiar Pantalla;
+	
+	Escribir nombreMascota, " es un(a) ", tipoMascota, ", el cual, tiene ", edadMascota, " años de edad, y ", nombreDueno, " es actualmente su dueño(a)";
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ol>
+                <p>Adjunto video con la explicacion de los respectivos ejercicios</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c4iOcrAG6LU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+    </section>
+    <section id="condicionales">
+        <article>
+            <h1>Taller de condicionales</h1>
+            <ol>
+                <li>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto1
+	
+	Definir edad Como Entero;
+	
+	Escribir "Por favor ingrese su edad";
+	Leer edad;
+	
+	Si edad >= 18 Entonces
+		Escribir "Usted es mayor de edad";
+	FinSi
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, deberá mostrar en pantalla: Usted aún es un niño(a).</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto2
+	
+	Definir edad Como Entero;
+	
+	Escribir "Por favor ingrese su edad";
+	Leer edad;
+	
+	Si edad < 18 Entonces
+		Escribir "Usted aún es un niño(a)";
+	FinSi
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo] usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18 años, entonces, deberá imprimirse el siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto3
+	
+	Definir nombre, apellidos Como Caracter;
+	Definir edad Como Entero;
+	
+	Escribir "Por favor ingrese su nombre";
+	Leer nombre;
+	
+	Escribir "Por favor ingrese su apellido";
+	Leer apellidos;
+	
+	Escribir "Por favor ingrese su edad";
+	Leer edad;
+	
+	Si edad >= 18 Entonces
+		
+		Escribir nombre, " ", apellidos, " usted es mayor de edad, por lo tanto puede entrar a la fiesta";
+		
+	SiNo
+		
+		Escribir nombre, " ", apellidos, " usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa";
+		
+	FinSi
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar películas disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto4
+	
+	Definir pelicula1, pelicula2, pelicula3, pelicula4, pelicula, estado, Lista Como Caracter;
+	Definir disponible1, disponible2, disponible3 ,disponible4 Como Logico;
+	Definir opcion, opcionPelicula Como Entero;
+	
+	disponible1 <- Verdadero;
+	disponible2 <- Verdadero;
+	disponible3 <- Falso;
+	disponible4 <- Verdadero;
+	pelicula1 <- "Volver al futuro -";
+	pelicula2 <- "Blade Runner 2049 -";
+	pelicula3 <- "Ghost in the Shell -";
+	pelicula4 <- "Akira -";
+	
+	Escribir "Elija la opción deseada";
+	Escribir "1. Alquilar película";
+	Escribir "2. Consultar películas disponibles";
+	Escribir "3. Recibir película";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion Hacer
+		
+		1:
+			Escribir "Elija la película deseada";
+			Escribir "1. Voler al futuro";
+			Escribir "2. Blade Runner 2049";
+			Escribir "3. Ghost in the Shell";
+			Escribir "4. Akira";
+			Leer opcionPelicula;
+			
+			Limpiar Pantalla;
+			
+			Segun opcionPelicula Hacer
+				1:
+					Si disponible1 = Verdadero Entonces
+						Escribir "Ha adquirido la película ", pelicula1;
+						disponible1 <- Falso;
+					SiNo
+						Escribir "La película ", pelicula1, "no esta disponible";
+					FinSi
+				2:
+					Si disponible2 = Verdadero Entonces
+						Escribir "Ha adquirido la película ", pelicula2;
+						disponible2 <- Falso;
+					SiNo
+						Escribir "La película ", pelicula2, "no esta disponible";
+					FinSi
+				3:
+					Si disponible3 = Verdadero Entonces
+						Escribir "Ha adquirido la película ", pelicula3;
+						disponible3 <- Falso;
+					SiNo
+						Escribir "La película ", pelicula3, "no esta disponible";
+					FinSi
+				4:
+					Si disponible4 = Verdadero Entonces
+						Escribir "Ha adquirido la película ", pelicula4;
+						disponible4 <- Falso;
+					SiNo
+						Escribir "La película ", pelicula4, "no esta disponible";
+					FinSi
+			FinSegun
+		2:
+			Si disponible1 = Verdadero Entonces
+				Lista <- pelicula1;
+			FinSi
+			Si disponible2 = Verdadero Entonces
+				Lista <- Concatenar(Lista,pelicula2);
+			FinSi
+			Si disponible3 = Verdadero Entonces
+				Lista <- Concatenar(Lista,pelicula3);
+			FinSi
+			Si disponible4 = Verdadero Entonces
+				Lista <- Concatenar(Lista,pelicula4);
+			FinSi
+			Escribir "Esta es una lista de las películas disponibles actualmente: ", Lista;
+		3:
+			Escribir "Ingrese el nombre de la película a regresar";
+			Leer pelicula;
+			Escribir  "¿La película presenta algun daño o novedad? Por favor ingrese la información pertinente";
+			Leer estado;
+			Limpiar Pantalla;
+			Escribir "Usted a ingresado la siguiente información ", "La película ", pelicula, " presenta la siguiente información: ", estado;
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas características que deben indicársele al cliente para que pueda escoger el producto a comprar. Para cada cliente, se tienen las opciones de compra de producto, consulta de precios por producto y devoluciones en caso de que se presenten.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto5
+	
+	Definir precio1, precio2, precio3 Como Real;
+	Definir caracteristicasProducto1, caracteristicasProducto2, caracteristicasProducto3, producto1, producto2, producto3, regresar Como Caracter;
+	Definir listaProductos, opcion Como Entero;
+	Definir correcto Como Logico;
+	
+	producto1 <- "Analgésicos";
+	producto2 <- "Vendas";
+	producto3 <- "Botiquin";
+	caracteristicasProducto1 <- "Alivian, reducen el dolor";
+	caracteristicasProducto2 <- "Vendar heridas";
+	caracteristicasProducto3 <- "Equipamiento basico";
+	precio1 <- 5999.99;
+	precio2 <- 3560.80;
+	precio3 <- 10999.89;
+	
+	Escribir "Elija la opción deseada";
+	Escribir "1. Comprar productos";
+	Escribir "2. Consultar precios por producto";
+	Escribir "3. Devolver producto";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion hacer
+		
+		1:
+			Escribir "Seleccione los productos que desea comprar";
+			Escribir "1. ", producto1;
+			Escribir "2. ", producto2;
+			Escribir "3. ", producto3;
+			Leer listaProductos;
+			
+			Limpiar Pantalla;
+			
+			Segun listaProductos hacer
+				1:
+					Escribir "¿Es correcto el producto a comprar?";
+					Escribir "Producto: ", producto1, " ", caracteristicasProducto1;
+					Leer correcto;
+					
+					Limpiar Pantalla;
+					
+					Si correcto = Verdadero Entonces
+						Escribir "Gracias por comprar en nuestra tienda! :)";
+						Escribir "Producto comprado: ", producto1;
+						Escribir "Total: ", precio1;
+					SiNo
+						Escribir "El producto seleccionado ", producto1, " no es el deseado, cancelando la compra";
+					FinSi
+				2:
+					Escribir "¿Es correcto el producto a comprar?";
+					Escribir "Producto: ", producto2, " ", caracteristicasProducto2;
+					Leer correcto;
+					
+					Limpiar Pantalla;
+					
+					Si correcto = Verdadero Entonces
+						Escribir "Gracias por comprar en nuestra tienda! :)";
+						Escribir "Producto comprado: ", producto2;
+						Escribir "Total: ", precio2;
+					SiNo
+						Escribir "El producto seleccionado ", producto2, " no es el deseado, cancelando la compra";
+					FinSi
+				3:
+					Escribir "¿Es correcto el producto a comprar?";
+					Escribir "Producto: ", producto3, " ", caracteristicasProducto3;
+					Leer correcto;
+					
+					Limpiar Pantalla;
+					
+					Si correcto = Verdadero Entonces
+						Escribir "Gracias por comprar en nuestra tienda! :)";
+						Escribir "Producto comprado: ", producto3;
+						Escribir "Total: ", precio3;
+					SiNo
+						Escribir "El producto seleccionado ", producto3, " no es el deseado, cancelando la compra";
+					FinSi
+			FinSegun
+		2:
+			Escribir "Lista de precios por producto";
+			Escribir "Precio: ", precio1, " ", producto1, " Caracteristicas: ", caracteristicasProducto1;
+			Escribir "Precio: ", precio2, " ", producto2, " Caracteristicas: ", caracteristicasProducto2;
+			Escribir "Precio: ", precio3, " ", producto3, " Caracteristicas: ", caracteristicasProducto3;
+		3:
+			Escribir "Ingrese el producto que desea devolver";
+			Leer regresar;
+			Escribir "El producto a devolver es: ", regresar;
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados a sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por parte del cliente. También debe existir registro de salida del taller con las novedades y otra de arreglos hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la motocicleta al entregarla.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto6
+	
+	Definir placa, motocicleta, arreglos, ingreso, salida, observaciones, novedades Como Caracter;
+	Definir opcion Como Entero;
+	Definir arreglosValidacion Como Logico;
+	
+	Escribir "Bienvenido a taller de motos El Maquinista";
+	Escribir "Por favor elija la opción deseada";
+	Escribir "1. Ingresar motocicleta";
+	Escribir "2. Salida motocicleta";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Por favor digite la placa de la motocicleta a ingresar: ";
+			Leer placa;
+			
+			Escribir "Por favor digite el modelo de la motocicleta: ";
+			Leer motocicleta;
+			
+			Escribir "Por favor digite la fecha de ingreso de la motocicleta: ";
+			Leer ingreso;
+			
+			Escribir "Por favor ingrese las observaciones por parte del cliente dadas a la motocicleta: ";
+			Leer observaciones;
+			
+			Limpiar Pantalla;
+			
+			Escribir "La informacion ingresada es la siguiente: ";
+			Escribir "La motocicleta con placas: ", placa;
+			Escribir "De tipo: ", motocicleta;
+			Escribir "Fue ingresada el dia: ", ingreso;
+			Escribir "Con las siguientes observaciones: ", observaciones;
+		2:
+			Escribir "Por favor digite la placa de la motocicleta a retirar: ";
+			Leer placa;
+			
+			Escribir "Por favor digite el modelo de la motocicleta: ";
+			Leer motocicleta;
+			
+			Escribir "Por favor digite la fecha de salida de la motocicleta: ";
+			Leer salida;
+			
+			Escribir "Por favor ingrese las novedades hechas a la motocicleta: ";
+			Leer novedades;
+			
+			Escribir "¿Se ha hecho algun arreglo que involucre piezas nuevas?";
+			Leer arreglosValidacion;
+			
+			Si arreglosValidacion = Verdadero Entonces
+				
+				Escribir "Por favor ingrese los repuestos utilizados en el arreglo: ";
+				Leer arreglos;
+				
+				Limpiar Pantalla;
+				
+				Escribir "La información es la siguiente: ";
+				Escribir "La motocicleta con placas: ", placa;
+				Escribir "De tipo: ", motocicleta;
+				Escribir "Salio el dia: ", salida;
+				Escribir "Con las siguientes novedades: ", novedades;
+				Escribir "Y con los nuevos recambios: ", arreglos;
+				
+			SiNo
+				
+				Limpiar Pantalla;
+				
+				Escribir "La información es la siguiente: ";
+				Escribir "La motocicleta con placas: ", placa;
+				Escribir "De tipo: ", motocicleta;
+				Escribir "Salio el dia: ", salida;
+				Escribir "Con las siguientes novedades: ", novedades;
+				
+			FinSi
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso).</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto7
+	
+	Definir peso, estatura, imc Como Real;
+	Definir nombre, apellido, cedula Como Caracter;
+	
+	Escribir "Bienvenido al sistema :)";
+	Escribir "Por favor ingrese los datos del paciente";
+	Escribir "Nombres: ";
+	Leer nombre;
+	Escribir "Apellidos: ";
+	Leer apellido;
+	Escribir "Cedula: ";
+	Leer cedula;
+	Escribir "Peso en kilogramos: ";
+	Leer peso;
+	Escribir "Estatura en metros: ";
+	Leer estatura;
+	
+	Limpiar Pantalla;
+	
+	Escribir "La informacion del paciente es la siguiente: ";
+	Escribir "El ciudadano ", nombre, " ", apellido, " con cedula ", cedula, " con peso ", peso, " y una estatura de ", estatura;
+	
+	Escribir "Ahora se procedera a calcular el IMC del paciente";
+	Escribir "...";
+	Escribir "...";
+	Escribir "...";
+	Escribir "...";
+	
+	Limpiar Pantalla;
+	
+	imc <- peso/(estatura)^2;
+	Escribir imc;
+	
+	Escribir "El ciudadano ", nombre, " ", apellido, " con cedula ", cedula, " con peso ", peso, " y una estatura de ", estatura;
+	
+	Si (imc<18.5) Entonces
+		Escribir "Tiene un indice de masa corporal de: ", imc, " y actualmente tiene bajo peso";
+	SiNo
+		Si (imc>=18.5 y imc<=24.9) Entonces
+			Escribir "Tiene un indice de masa corporal de: ", imc, " y actualmente tiene un peso normal"; 
+		SiNo
+			Si (imc>=25 y imc<=29.9) Entonces
+				Escribir "Tiene un indice de masa corporal de: ", imc, " y actualmente tiene sobrepeso";
+			SiNo
+				Si (imc>30) Entonces
+					Escribir "Tiene un indice de masa corporal de: ", imc, " y actualmente tiene obesidad";
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación permita registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto8
+	
+	Definir pedidoTorta, pedidoSabor, pedidoDecoracion, pedidoPorciones, torta1, torta2, torta3, saborA, saborB, decoracionA, decoracionB Como Caracter;
+	Definir porcionesA, porcionesB, opcion, numeroVentas Como Entero;
+	
+	torta1 <- "Torta de dos pisos";
+	torta2 <- "Torta fría";
+	torta3 <- "Torta de tres pisos";
+	saborA <- "Chocolate";
+	saborB <- "Mora";
+	decoracionA <- "Pedacitos de chocolate";
+	decoracionB <- "Coco rayado";
+	porcionesA <- 8;
+	porcionesB <- 4;
+	numeroVentas <- 0;
+	
+	Escribir "Bienvenido a la pasteleria de Don Carlos";
+	Escribir "Elija la accion deseada";
+	Escribir "1. Registrar pedido";
+	Escribir "2. Tortas disponibles";
+	Escribir "3. Ventas del dia de hoy";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Por favor ingrese los detalles del pedido";
+			Escribir "Tipo de torta: ";
+			Leer pedidoTorta;
+			Escribir "Sabor: ";
+			Leer pedidoSabor;
+			Escribir "Decoraciones: ";
+			Leer pedidoDecoracion;
+			Escribir "Porciones: ";
+			Leer pedidoPorciones;
+			
+			Limpiar Pantalla;
+			
+			Escribir "Los detalles del pedido son los siguientes: ";
+			Escribir "Tipo de torta: ", pedidoTorta;
+			Escribir "Sabor: ", pedidoSabor;
+			Escribir "Decoraciones: ", pedidoDecoracion;
+			Escribir "Porciones: ", pedidoPorciones;
+			numeroVentas <- numeroVentas + 1;
+			
+		2:
+			Escribir "Esta es una lista de las tortas disponibles: ";
+			Escribir torta1, " sabor ", saborA, " con ", decoracionA, " de ", porcionesA, " porciones";
+			Escribir torta2, " sabor ", saborB, " con ", decoracionA, " de ", porcionesB, " porciones";
+			Escribir torta3, " sabor ", saborA, " con ", decoracionB, " de ", porcionesB, " porciones";
+		3:
+			Escribir "Ventas realizadas el dia de hoy: ";
+			Escribir "Se han vendido un total de ", numeroVentas, " el dia de hoy";
+			
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo y mostrar su respectivo resultado.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto9
+	
+	Definir base, altura, base1, base2, area Como Real;
+	Definir opcion Como Entero;
+	
+	Escribir "Bienvenido, por favor seleccione la operacion a realizar";
+	Escribir "1. Calcular area del rectangulo";
+	Escribir "2. Calcular area del triangulo";
+	Escribir "3. Calcular area del trapecio";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Por favor ingrese los datos necesarios";
+			Escribir "Base del rectangulo";
+			Leer base;
+			Escribir "Altura del rectangulo";
+			Leer altura;
+			area <- base*altura;
+			Escribir "El area del rectangulo es: ", area;
+			
+		2:
+			Escribir "Por favor ingrese los datos necesarios";
+			Escribir "Base del triangulo";
+			Leer base;
+			Escribir "Altura del triangulo";
+			Leer altura;
+			area <- base*altura/2;
+			Escribir "El area del triangulo es: ", area;
+			
+		3:
+			Escribir "Por favor ingrese los datos necesarios";
+			Escribir "Base mayor del trapecio";
+			Leer base1;
+			Escribir "Base menor del trapecio";
+			Leer base2;
+			Escribir "Altura del trapecio";
+			Leer altura;
+			area <- (base1+base2)*altura/2;
+			Escribir "El area del trapecio es: ", area;
+			
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al valor que tiene en la cuenta.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto10
+	
+	Definir titular Como Caracter;
+	Definir cantidad, ingreso, retiro Como Real;
+	Definir opcion Como Entero;
+	
+	titular <- "Julian Mauricio Correa Martinez";
+	cantidad <- 300000;
+	
+	Escribir "Bienvenido a Su banco fiel";
+	Escribir "Por favor elija la opcion deseada";
+	Escribir "1. Realizar retiro";
+	Escribir "2. Realizar ingreso";
+	Escribir "3. Consultar saldo";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Por favor ingrese el monto a retirar";
+			Leer retiro;
+			
+			Si retiro > cantidad Entonces
+				Escribir "El valor a retirar supera la cantidad que posee actualmente";
+			SiNo
+				Escribir "Retirando ", retiro, "$ Por favor espere";
+				cantidad <- cantidad-retiro;
+				Escribir cantidad, "$ restantes en su cuenta";
+			FinSi
+		2:
+			Escribir "Por favor ingrese el monto a depositar";
+			Leer ingreso;
+			
+			Si ingreso <= 0 Entonces
+				Escribir "El valor a ingresar no es valido";
+			SiNo
+				Escribir "Depositando ", ingreso, "$ a su cuenta";
+				cantidad <- cantidad+ingreso;
+				Escribir "Actualmente tiene ", cantidad, "$ en su cuenta";
+			FinSi
+		3:
+			Escribir "Actualmente el titular ", titular, " posee ", cantidad, "$ en su cuenta";
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+	
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </ol>
+            <p>Adjunto video con la explicacion de los respectivos ejercicios</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c4iOcrAG6LU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+    </section>
+    <section id="ciclos">
+        <article>
+            <h1>Taller de ciclos</h1>
+			<ol>
+				<li>Realizar la siguiente figura por medio del ciclo Para</li>
+				<ul>
+					<li>
+						<figure>
+							<img class="zoom" src="img/eje1.png" alt="Foto" width="150" height="200">
+						</figure>
+					</li>
+				</ul>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto1
+	
+	Definir control Como Entero;
+	Definir figura Como Caracter;
+	
+	figura <- "";
+	
+	Para control <- 1 Hasta 10 Con Paso 1 Hacer
+		
+		figura <- Concatenar("*",figura);
+		Escribir figura;
+		
+	FinPara
+	
+FinProceso
+
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>Realizar la siguiente figura por medio del ciclo Mientras - Hacer</li>
+					<ul>
+						<li>
+							<figure>
+								<img class="zoom" src="img/eje2.png" alt="Foto" width="150" height="200">
+							</figure>
+						</li>
+					</ul>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto2
+	
+	Definir control Como Logico;
+	Definir figura Como Caracter;
+	Definir incremento, i Como Entero;
+	control <- Verdadero;
+	
+	figura <- "         ";
+	incremento <- 1;
+	i <- 0;
+	
+	Mientras control = Verdadero Hacer
+		
+		figura <- Concatenar(figura, "*");
+		Escribir figura;
+		incremento <- incremento + 1;
+		i <- 9;
+		Si incremento >= 1 Entonces
+			figura <- Subcadena(figura, 1, i);
+			i <- i-1;
+		FinSi
+		Si incremento = 10 Entonces
+			control <- Falso;
+		FinSi
+	FinMientras
+	
+FinProceso
+
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que</li>
+					<ul>
+						<li>
+							<figure>
+								<img class="zoom" src="img/eje3.png" alt="Foto" width="150" height="200">
+							</figure>
+						</li>
+					</ul>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto3
+	
+	Definir contador, espacios, c_espacios, i Como Entero;
+	Definir signo, tab Como Caracter;
+	
+	contador <- 0;
+	signo <- "*";
+	espacios <- 12;
+	c_espacios <- 1;
+	tab <- "";
+	i <- 1;
+	
+	Escribir "             *";
+	
+	Repetir
+		Mientras contador <= i Hacer
+			signo <- Concatenar(signo,"*");
+			contador <- contador + 1;
+		FinMientras
+		Mientras c_espacios <= espacios Hacer
+			tab <- Concatenar(tab, " ");
+			c_espacios <- c_espacios + 1;
+		FinMientras
+		Escribir tab, signo;
+		contador <- contador -1;
+		espacios <- espacios -1;
+		c_espacios <- 1;
+		tab <- "";
+		i <- i + 1;
+	Hasta Que i = 11;
+	
+FinProceso
+
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5, entonces el resultado debería ser el siguiente:</li>
+					<ul>
+						<li>
+							<figure>
+								<img class="zoom" src="img/eje4.png" alt="Foto" width="150" height="200">
+							</figure>
+						</li>
+					</ul>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto4
+	
+	Definir i, num, resultado Como Entero;
+	
+	i <- 1;
+	num <- 0;
+	resultado <- 0;
+	
+	Escribir "Por favor ingrese un numero a multiplicar";
+	Leer num;
+	
+	Para i <- 1 Hasta 10 Con Paso 1 Hacer
+		
+		resultado <- i * num;
+		Escribir i, " * ", num, " = ", resultado;
+		
+	FinPara
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo.</li>
+					<ul>
+						<li>
+							<figure>
+								<img class="zoom" src="img/eje5.png" alt="Foto" width="150" height="200">
+							</figure>
+						</li>
+					</ul>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto5
+	
+	Definir control, nombreCapturado Como Logico;
+	Definir opcion Como Entero;
+	Definir nombre Como Caracter;
+	
+	nombreCapturado <- Falso;
+	control <- Verdadero;
+	
+	Mientras control = Verdadero Hacer
+		
+		Escribir "Bienvenido al sistema, elija una opcion";
+		Escribir "1. Capturar nombre";
+		Escribir "2. Saludar persona";
+		Escribir "3. Salir sistema";
+		Leer opcion;
+		
+		Limpiar Pantalla;
+		
+		Segun opcion Hacer
+			1:
+				Escribir "¿Como te llamas?";
+				Leer nombre;
+				nombreCapturado <- Verdadero;
+				Limpiar Pantalla;
+			2:
+				Si nombreCapturado = Verdadero Entonces
+					Escribir "Hola ", nombre;
+				SiNo
+					Escribir "Para saludarte debe primero capturar tu nombre";
+				FinSi
+				Limpiar Pantalla;
+			3:
+				Escribir "Hasta luego";
+				control <- Falso;
+			De Otro Modo:
+				Escribir "La opcion elegida no existe";
+		FinSegun
+	FinMientras
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación permita añadir 3 contactos verificando que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto6
+	
+	Definir control Como Logico;
+	Definir opcion, i Como Entero;
+	Definir nombre, nombre1, nombre2, nombre3, telefono, telefono1, telefono2, telefono3, organizacion, organizacion1, organizacion2, organizacion3 Como Caracter;
+	
+	control <- Verdadero;
+	telefono <- "";
+	telefono1 <- "";
+	telefono2 <- "";
+	telefono3 <- "";
+	nombre1 <- "";
+	nombre2 <- "";
+	nombre3 <- "";
+	nombre <- "";
+	organizacion <- "";
+	organizacion1 <- "";
+	organizacion2 <- "";
+	organizacion3 <- "";
+	i <- 0;
+	
+	Mientras control = Verdadero Hacer
+		
+		Escribir "Bienvenido a sus contactos";
+		Escribir "1. Añadir contacto";
+		Escribir "2. Buscar contacto";
+		Escribir "3. Eliminar contacto";
+		Escribir "0. Salir";
+		Leer opcion;
+		Limpiar Pantalla;
+		
+		Segun opcion Hacer
+			1:
+				Si i >= 3 Entonces
+					Escribir "Ya no se pueden agregar mas contactos";
+				SiNo
+					Escribir "Nombre contacto: ";
+					Leer nombre;
+					Si i = 0 Entonces
+						nombre1 <- nombre;
+					SiNo
+						Si i = 1 Entonces
+							nombre2 <- nombre;
+						SiNo
+							nombre3 <- nombre;
+						FinSi
+					FinSi
+					
+					Escribir "Telefono: ";
+					Leer telefono;
+					Si telefono = telefono1 O telefono = telefono2 O telefono = telefono3 Entonces
+						Escribir "El numero ingresado ya existe";
+					SiNo
+						Si i = 0 Entonces
+							telefono1 <- telefono;
+						SiNo
+							Si i = 1 Entonces
+								telefono2 <- telefono;
+							SiNo
+								telefono3 <- telefono;
+							FinSi
+						FinSi
+					FinSi
+					
+					Escribir "Organizacion: ";
+					Leer organizacion;
+					Si i = 0 Entonces
+						organizacion1 <- organizacion;
+					SiNo
+						Si i = 1 Entonces
+							organizacion2 <- organizacion;
+						SiNo
+							organizacion3 <- organizacion;
+						FinSi
+					FinSi
+					i <- i + 1;
+				FinSi
+			2:
+				Escribir "Ingrese el nombre del contacto que desea buscar";
+				nombre <- "";
+				Leer nombre;
+				Si nombre = nombre1 Entonces
+					Escribir nombre1, " ", telefono1, " ", organizacion1;
+				SiNo
+					Si nombre = nombre2 Entonces
+						Escribir nombre2, " ", telefono2, " ", organizacion2;
+					SiNo
+						Si nombre = nombre3 Entonces
+							Escribir nombre3, " ", telefono3, " ", organizacion3;
+						SiNo
+							Escribir "El nombre ingresado no existe";
+						FinSi
+					FinSi
+				FinSi
+			3:
+				Escribir "Ingrese el numero de telefono que desea eliminar";
+				telefono <- "";
+				Leer telefono;
+				Si telefono = telefono1 Entonces
+					telefono1 <- "";
+					nombre1 <- "";
+					organizacion1 <- "";
+					i <- i - 1;
+				SiNo
+					Si telefono = telefono2 Entonces
+						telefono2 <- "";
+						nombre2 <- "";
+						organizacion2 <- "";
+						i <- i - 1;
+					SiNo
+						Si telefono = telefono3 Entonces
+							telefono3 <- "";
+							nombre3 <- "";
+							organizacion3 <- "";
+							i <- i - 1;
+						SiNo
+							Escribir "El numero ingresado no existe";
+						FinSi
+					FinSi
+				FinSi
+			0:
+				Escribir "Hasta luego";
+				control <- Falso;
+			De Otro Modo:
+				Escribir "La opcion elegida no existe";
+		FinSegun
+	FinMientras
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y marca, y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar al parqueadero, retirar del parqueadero y consultar si un vehículo se encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto7
+	
+	Definir control Como Logico;
+	Definir opcion, i Como Entero;
+	Definir placa, placa1, placa2, placa3, placa4, placa5, marca, marca1, marca2, marca3, marca4, marca5, nombre, nombre1, nombre2, nombre3, nombre4, nombre5, telefono, telefono1, telefono2, telefono3, telefono4, telefono5 Como Caracter;
+	
+	control <- Verdadero;
+	i <- 0;
+	placa <- "";
+	placa1 <- "";
+	placa2 <- "";
+	placa3 <- "";
+	placa4 <- "";
+	placa5 <- "";
+	marca <- "";
+	marca1 <- "";
+	marca2 <- "";
+	marca3 <- "";
+	marca4 <- "";
+	marca5 <- "";
+	telefono <- "";
+	telefono1 <- "";
+	telefono2 <- "";
+	telefono3 <- "";
+	telefono4 <- "";
+	telefono5 <- "";
+	nombre1 <- "";
+	nombre2 <- "";
+	nombre3 <- "";
+	nombre4 <- "";
+	nombre5 <- "";
+	nombre <- "";
+	
+	Mientras control = Verdadero Hacer
+		Escribir "Bienvenido al parqueadero El guardian";
+		Escribir "1. Ingresar vehiculo";
+		Escribir "2. Retirar vehiculo";
+		Escribir "3. Consultar vehiculo";
+		Escribir "0. Salir";
+		Leer opcion;
+		Limpiar Pantalla;
+		
+		Segun opcion Hacer
+			1:
+				Si i >= 5 Entonces
+					Escribir "Ya no se pueden ingresar mas vehiculos";
+				SiNo
+					Escribir "Ingrese el numero de la placa";
+					Leer placa;
+					Si placa = placa1 O placa = placa2 O placa = placa3 O placa = placa4 O placa = placa5  Entonces
+						Escribir "El vehiculo ingresado ya existe";
+					SiNo
+						Escribir "Ingrese la marca del vehiculo";
+						Leer marca;
+						Escribir "Nombre del propietario";
+						Leer nombre;
+						Escribir "Telefono del propietario";
+						Leer telefono;
+						Si i = 0 Entonces
+							placa1 <- placa;
+							marca1 <- marca;
+							nombre1 <- nombre;
+							telefono1 <- telefono;
+						SiNo
+							Si i = 1 Entonces
+								placa2 <- placa;
+								marca2 <- marca;
+								nombre2 <- nombre;
+								telefono2 <- telefono;
+							SiNo
+								Si i = 2 Entonces
+									placa3 <- placa;
+									marca3 <- marca;
+									nombre3 <- nombre;
+									telefono3 <- telefono;
+								SiNo
+									Si i = 3 Entonces
+										placa4 <- placa;
+										marca4 <- marca;
+										nombre4 <- nombre;
+										telefono4 <- telefono;
+									SiNo
+										placa5 <- placa;
+										marca5 <- marca;
+										nombre5 <- nombre;
+										telefono5 <- telefono;
+									FinSi
+								FinSi
+							FinSi
+						FinSi
+						i <- i + 1;
+					FinSi
+				FinSi
+			2:
+				Escribir "Ingrese la placa del vehiculo que desea retirar";
+				placa <- "";
+				Leer placa;
+				Si placa = placa1 Entonces
+					placa1 <- "";
+					marca1 <- "";
+					nombre1 <- "";
+					telefono1 <- "";
+					Escribir "Se a retirado el vehiculo correctamente";
+					i <- i - 1;
+				SiNo
+					Si placa = placa2 Entonces
+						placa2 <- "";
+						marca2 <- "";
+						nombre2 <- "";
+						telefono2 <- "";
+						Escribir "Se a retirado el vehiculo correctamente";
+						i <- i - 1;
+					SiNo
+						Si placa = placa3 Entonces
+							placa3 <- "";
+							marca3 <- "";
+							nombre3 <- "";
+							telefono3 <- "";
+							Escribir "Se a retirado el vehiculo correctamente";
+							i <- i - 1;
+						SiNo
+							Si placa = placa4 Entonces
+								placa4 <- "";
+								marca4 <- "";
+								nombre4 <- "";
+								telefono4 <- "";
+								Escribir "Se a retirado el vehiculo correctamente";
+								i <- i - 1;
+							SiNo
+								Si placa = placa5 Entonces
+									placa5 <- "";
+									marca5 <- "";
+									nombre5 <- "";
+									telefono5 <- "";
+									Escribir "Se a retirado el vehiculo correctamente";
+									i <- i - 1;
+								SiNo
+									Escribir "El vehiculo no existe";
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			3:
+				Escribir "Ingrese la placa del vehiculo que desea consultar";
+				placa <- "";
+				Leer placa;
+				Si placa = placa1 Entonces
+					Escribir "El vehiculo con placas",placa1, " Tiene la siguiente informacion";
+					Escribir "Marca: ", marca1;
+					Escribir "Propietario: ", nombre1;
+					Escribir "Telefono: ", telefono1;
+				SiNo
+					Si placa = placa2 Entonces
+						Escribir "El vehiculo con placas",placa2, " Tiene la siguiente informacion";
+						Escribir "Marca: ", marca2;
+						Escribir "Propietario: ", nombre2;
+						Escribir "Telefono: ", telefono2;
+					SiNo
+						Si placa = placa3 Entonces
+							Escribir "El vehiculo con placas",placa3, " Tiene la siguiente informacion";
+							Escribir "Marca: ", marca3;
+							Escribir "Propietario: ", nombre3;
+							Escribir "Telefono: ", telefono3;
+						SiNo
+							Si placa = placa4 Entonces
+								Escribir "El vehiculo con placas",placa4, " Tiene la siguiente informacion";
+								Escribir "Marca: ", marca4;
+								Escribir "Propietario: ", nombre4;
+								Escribir "Telefono: ", telefono4;
+							SiNo
+								Si placa = placa5 Entonces
+									Escribir "El vehiculo con placas",placa5, " Tiene la siguiente informacion";
+									Escribir "Marca: ", marca5;
+									Escribir "Propietario: ", nombre5;
+									Escribir "Telefono: ", telefono5;
+								SiNo
+									Escribir "El vehiculo no existe";
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			0:
+				Escribir "Hasta luego";
+				control <- Falso;
+			De Otro Modo:
+				Escribir "La opcion elegida no existe";
+		FinSegun
+	FinMientras
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a sus clientes en los cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar con el trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir registrar su ingreso al curso, consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o no). Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su totalidad.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto8
+	
+	Definir control, aprovado, aprovado1, aprovado2, aprovado3, aprovado4, aprovado5, aprovado6, aprovado7, aprovado8, presentado, presentado1, presentado2, presentado3, presentado4, presentado5, presentado6, presentado7, presentado8 Como Logico;
+	Definir opcion, i, j Como Entero;
+	Definir usuario, usuario1, usuario2, usuario3, usuario4, usuario5, usuario6, usuario7, usuario8 Como Caracter;
+	
+	control <- Verdadero;
+	aprovado <- Falso;
+	aprovado1 <- Falso;
+	aprovado2 <- Falso;
+	aprovado3 <- Falso;
+	aprovado4 <- Falso;
+	aprovado5 <- Falso;
+	aprovado6 <- Falso;
+	aprovado7 <- Falso;
+	aprovado8 <- Falso;
+	i <- 0;
+	presentado <- Falso;
+	presentado1 <- Falso;
+	presentado2 <- Falso;
+	presentado3 <- Falso;
+	presentado4 <- Falso;
+	presentado5 <- Falso;
+	presentado6 <- Falso;
+	presentado7 <- Falso;
+	presentado8 <- Falso;
+	usuario <- "";
+	usuario1 <- "";
+	usuario2 <- "";
+	usuario3 <- "";
+	usuario4 <- "";
+	usuario5 <- "";
+	usuario6 <- "";
+	usuario7 <- "";
+	usuario8 <- "";
+	
+	Mientras control = Verdadero Hacer
+		Escribir "Bienvenido a la escuela automovilistica El Maestro";
+		Escribir "1. Ingresar usuario";
+		Escribir "2. Consultar presentados";
+		Escribir "3. Consultar resultados";
+		Escribir "0. Salir";
+		Leer opcion;
+		Limpiar Pantalla;
+		
+		Segun opcion Hacer
+			1:
+				Si i >= 8 Entonces
+					Escribir "Ya no se admiten mas usuarios";
+				SiNo
+					Escribir "Ingrese el nombre del usuario";
+					Leer usuario;
+					Si usuario = usuario1 O usuario = usuario2 O usuario = usuario3 O usuario = usuario4 O usuario = usuario5 O usuario = usuario6 O usuario = usuario7 O usuario = usuario8  Entonces
+						Escribir "Este usuario ya existe";
+					SiNo
+						Escribir "¿El usuario aprovo el curso?";
+						Leer aprovado;
+						Escribir "¿El usuario presento el curso?";
+						Leer presentado;
+						Si i = 0 Entonces
+							usuario1 <- usuario;
+							presentado1 <- presentado;
+							aprovado1 <- aprovado;
+						SiNo
+							Si i = 1 Entonces
+								usuario2 <- usuario;
+								presentado2 <- presentado;
+								aprovado2 <- aprovado;
+							SiNo
+								Si i = 2 Entonces
+									usuario3 <- usuario;
+									presentado3 <- presentado;
+									aprovado3 <- aprovado;
+								SiNo
+									Si i = 3 Entonces
+										usuario4 <- usuario;
+										presentado4 <- presentado;
+										aprovado4 <- aprovado;
+									SiNo
+										Si i = 4 Entonces
+											usuario5 <- usuario;
+											presentado5 <- presentado;
+											aprovado5 <- aprovado;
+										SiNo
+											Si i = 5 Entonces
+												usuario6 <- usuario;
+												presentado6 <- presentado;
+												aprovado6 <- aprovado;
+											SiNo
+												Si i = 6 Entonces
+													usuario7 <- usuario;
+													presentado7 <- presentado;
+													aprovado7 <- aprovado;
+												SiNo
+													usuario8 <- usuario;
+													presentado8 <- presentado;
+													aprovado8 <- aprovado;
+												FinSi
+											FinSi
+										FinSi
+									FinSi
+								FinSi
+							FinSi
+						FinSi
+						i <- i + 1;
+					FinSi
+				FinSi
+			2:
+				Escribir "Consultando usuarios que presentaron el curso";
+				Si usuario1 = "" Y usuario2 = "" Y usuario3 = "" Y usuario4 = "" Y usuario5 = "" Y usuario6 = "" Y usuario7 = "" Y usuario8 = ""  Entonces
+					Escribir "No hay ningun usuario en el sistema";
+				SiNo
+					Si presentado1 = Verdadero Entonces
+						Escribir "El usuario ", usuario1, " presento el curso";
+					SiNo
+						Si presentado2 = Verdadero Entonces
+							Escribir "El usuario ", usuario2, " presento el curso";
+						SiNo
+							Si presentado3 = Verdadero Entonces
+								Escribir "El usuario ", usuario3, " presento el curso";
+							SiNo
+								Si presentado4 = Verdadero Entonces
+									Escribir "El usuario ", usuario4, " presento el curso";
+								SiNo
+									Si presentado5 = Verdadero Entonces
+										Escribir "El usuario ", usuario5, " presento el curso";
+									SiNo
+										Si presentado6 = Verdadero Entonces
+											Escribir "El usuario ", usuario6, " presento el curso";
+										SiNo
+											Si presentado7 = Verdadero Entonces
+												Escribir "El usuario ", usuario7, " presento el curso";
+											SiNo
+												Si presentado8 = Verdadero Entonces
+													Escribir "El usuario ", usuario8, " presento el curso";
+												FinSi
+											FinSi
+										FinSi
+									FinSi
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			3:
+				Escribir "Consultando usuarios que aprovaron el curso";
+				Si usuario1 = "" Y usuario2 = "" Y usuario3 = "" Y usuario4 = "" Y usuario5 = "" Y usuario6 = "" Y usuario7 = "" Y usuario8 = ""  Entonces
+					Escribir "No hay ningun usuario en el sistema";
+				SiNo
+					Si usuario1 <> "" Y aprovado1= Verdadero Entonces
+						Escribir "El usuario ", usuario1, "aprovo el curso";
+					SiNo
+						Si usuario1 <> "" Entonces
+							Escribir "El usuario ", usuario1, "no aprovo el curso";
+						FinSi
+					FinSi
+					Si usuario2 <> "" Y aprovado2= Verdadero Entonces
+						Escribir "El usuario ", usuario2, "aprovo el curso";
+					SiNo
+						Si usuario2 <> "" Entonces
+							Escribir "El usuario ", usuario2, "no aprovo el curso";
+						FinSi
+					FinSi
+					Si usuario3 <> "" Y aprovado3= Verdadero Entonces
+						Escribir "El usuario ", usuario3, "aprovo el curso";
+					SiNo
+						Si usuario3 <> "" Entonces
+							Escribir "El usuario ", usuario3, "no aprovo el curso";
+						FinSi
+					FinSi
+					Si usuario4 <> "" Y aprovado4= Verdadero Entonces
+						Escribir "El usuario ", usuario1, "aprovo el curso";
+					SiNo
+						Si usuario4 <> "" Entonces
+							Escribir "El usuario ", usuario4, "no aprovo el curso";
+						FinSi
+					FinSi
+					Si usuario5 <> "" Y aprovado5= Verdadero Entonces
+						Escribir "El usuario ", usuario5, "aprovo el curso";
+					SiNo
+						Si usuario5 <> "" Entonces
+							Escribir "El usuario ", usuario5, "no aprovo el curso";
+						FinSi
+					FinSi
+					Si usuario6<> "" Y aprovado6= Verdadero Entonces
+						Escribir "El usuario ", usuario6, "aprovo el curso";
+					SiNo
+						Si usuario6 <> "" Entonces
+							Escribir "El usuario ", usuario6, "no aprovo el curso";
+						FinSi
+					FinSi
+					Si usuario7 <> "" Y aprovado7= Verdadero Entonces
+						Escribir "El usuario ", usuario7, "aprovo el curso";
+					SiNo
+						Si usuario7 <> "" Entonces
+							Escribir "El usuario ", usuario7, "no aprovo el curso";
+						FinSi
+					FinSi
+					Si usuario8 <> "" Y aprovado8= Verdadero Entonces
+						Escribir "El usuario ", usuario8, "aprovo el curso";
+					SiNo
+						Si usuario8 <> "" Entonces
+							Escribir "El usuario ", usuario8, "no aprovo el curso";
+						FinSi
+					FinSi
+				FinSi
+			0:
+				Escribir "Hasta luego";
+				control <- Falso;
+			De Otro Modo:
+				Escribir "La opcion elegida no existe";
+		FinSegun
+	FinMientras
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+			</ol>
+			<p>Adjunto video con la explicacion de los respectivos ejercicios</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/c4iOcrAG6LU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+    </section>
+	<section id="arreglos">
+		<article>
+			<h1>Taller de Arreglos</h1>
+			<ol>
+				<li>Crear un vector de tipo Entero con 5 posiciones, llenarlo con información solicitada al usuario. Después de recoger toda la información, se requiere imprimir el índice de cada posición en el arreglo con su valor de la siguiente manera:</li>
+				<ul>
+					<br>
+					<li>[0] = 55</li>
+					<li>[1] = 99</li>
+					<li>[2] = 11</li>
+					<li>[3] = 56</li>
+					<li>[4] = 69</li>
+				</ul>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto1
+	
+	Definir i, j Como Entero;
+	Definir vector, dato Como Caracter;
+	Dimension vector[5];
+	
+	Para i <- 0 Hasta 4 Con Paso 1 Hacer
+		Limpiar Pantalla;
+		Escribir "Ingrese un numero";
+		Leer dato;
+		vector[i] <- dato;
+	FinPara
+	Limpiar Pantalla;
+	Para j <- 0 Hasta 4 Con Paso 1 Hacer
+		Escribir "[", j, "]", vector[j];
+	FinPara
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>Crear un arreglo de números enteros de 20 posiciones, el cual, debe ser llenado con números aleatorios entre 1 y 100; después de haber llenado dicho arreglo, se debe volver a recorrer utilizando un ciclo diferente al que se usó para llenarse e imprimir los números pares e impares. Ejemplo</li>
+					<ul>
+						<br>
+						<li>Números pares: 2, 4, 6, 8, 10</li>
+						<li>Números impares: 1, 3, 5, 7, 9</li>
+					</ul>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto2
+	
+	Definir i, vector Como Entero;
+	Definir control Como Logico;
+	Dimension vector[20];
+	control <- Verdadero;
+	
+	i <- 0;
+	Para i <- 0 Hasta 19 Con Paso 1 Hacer
+		vector[i] <- azar(100)+1;
+		Escribir vector[i];
+	FinPara
+	
+	i <- 0;
+	Escribir "Numero par ";
+	Mientras control = Verdadero Hacer
+		
+		Si vector[i] mod 2 = 0 Entonces
+			Escribir Sin Saltar vector[i], " ";
+			i <- i + 1;
+		SiNo
+			i <- i + 1;
+		FinSi
+		Si i >= 20  Entonces
+			control <- Falso;
+		FinSi
+		
+	FinMientras
+	
+	i <- 0;
+	control <- Verdadero;
+	Escribir " ";
+	Escribir "Numero impar ";
+	Mientras control = Verdadero Hacer
+		
+		Si vector[i] mod 2 = 0 Entonces
+			i <- i + 1;
+		SiNo
+			Escribir Sin Saltar vector[i], " ";
+			i <- i + 1;
+		FinSi
+		Si i >= 20  Entonces
+			control <- Falso;
+		FinSi
+		
+	FinMientras
+	
+	
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma matemática.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto3
+	
+	Definir i, j, vector, cont, num Como Entero;
+	Definir control Como Logico;
+	Dimension vector[20];
+	control <- Verdadero;
+	
+	i <- 0;
+	cont <- 0;
+	Para i <- 0 Hasta 19 Con Paso 1 Hacer
+		vector[i] <- i + 1;
+		Escribir vector[i], " " Sin Saltar;
+	FinPara
+	
+	i <- 0;
+	j <- 1;
+	Escribir " ";
+	Escribir "Numero primo";
+	Para i <- 0 Hasta 19 Con Paso 1 Hacer
+		num <- vector[i];
+		cont <- 0;
+		j <- 1;
+		Mientras j <= num Hacer
+			Si num % j == 0 Entonces
+				cont <- cont + 1;
+			FinSi
+			j <- j + 1;
+		FinMientras
+		
+		Si cont == 2 Entonces
+			Escribir num, " " Sin Saltar;
+		FinSi
+	FinPara	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>Dada la siguiente matriz bidimensional, el cual debe de quemar en el código</li>
+					<ul>
+						<br>
+						<li>01 02 03 04 05</li>
+						<li>06 07 08 09 10</li>
+						<li>11 12 13 14 15</li>
+						<li>16 17 18 19 20</li>
+						<br>
+						<li>Utilizando el conocimiento adquirido, a excepción de hacerlo de forma manual, imprima la siguiente matriz bidimensional.</li>
+						<br>
+						<li>01 02 03 04 05</li>
+						<li>10 09 08 07 06</li>
+						<li>11 12 13 14 15</li>
+						<li>20 19 18 17 16</li>
+					</ul>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto4
+	
+	Definir fila, columna, i, j, k, m, n, matriz, matriz2, vector1, vector2, vector3, vector4, menor, aux Como Entero;
+	Dimension matriz[4,5];
+	Dimension matriz2[4,5];
+	Dimension vector1[5], vector2[5], vector3[5], vector4[5];
+	
+	matriz[0,0] <- 01;
+	matriz[0,1] <- 02;
+	matriz[0,2] <- 03;
+	matriz[0,3] <- 04;
+	matriz[0,4] <- 05;
+	matriz[1,0] <- 06;
+	matriz[1,1] <- 07;
+	matriz[1,2] <- 08;
+	matriz[1,3] <- 09;
+	matriz[1,4] <- 10;
+	matriz[2,0] <- 11;
+	matriz[2,1] <- 12;
+	matriz[2,2] <- 13;
+	matriz[2,3] <- 14;
+	matriz[2,4] <- 15;
+	matriz[3,0] <- 16;
+	matriz[3,1] <- 17;
+	matriz[3,2] <- 18;
+	matriz[3,3] <- 19;
+	matriz[3,4] <- 20;
+	
+	Para fila <- 0 Hasta 3 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 4 Con Paso 1 Hacer
+			Escribir matriz[fila,columna] , " " Sin Saltar;
+		FinPara
+		Escribir " ";
+	FinPara
+	
+	i <- 0;
+	k <- 0;
+	m <- 0;
+	n <- 0;
+	Para fila <- 0 Hasta 3 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 4 Con Paso 1 Hacer
+			Si fila = 0 Entonces
+				vector1[i] <- matriz[fila,columna];
+				i <- i + 1;
+			SiNo
+				Si fila = 1 Entonces
+					vector2[k] <- matriz[fila,columna];
+					k <- k + 1;
+				SiNo
+					Si fila = 2 Entonces
+						vector3[m] <- matriz[fila,columna];
+						m <- m + 1;
+					SiNo
+						Si fila = 3 Entonces
+							vector4[n] <- matriz[fila,columna];
+							n <- n + 1;
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinPara
+	FinPara
+	
+	menor <- 0;
+	j <- 0;
+	i <- 0;
+	Para i <- 0 Hasta 4 Con Paso 1 Hacer
+		Para j <- i + 1 Hasta 4 Con Paso 1 Hacer
+			Si vector2[i] < vector2[j] Entonces
+				aux <- vector2[i];
+				vector2[i] <- vector2[j];
+				vector2[j] <- aux;
+			FinSi
+		FinPara
+	FinPara
+	
+	menor <- 0;
+	i <- 0;
+	j <- 0;
+	Para i <- 0 Hasta 4 Con Paso 1 Hacer
+		Para j <- i + 1 Hasta 4 Con Paso 1 Hacer
+			Si vector4[i] < vector4[j] Entonces
+				aux <- vector4[i];
+				vector4[i] <- vector4[j];
+				vector4[j] <- aux;
+			FinSi
+		FinPara
+	FinPara
+	
+	i <- 0;
+	k <- 0;
+	m <- 0;
+	n <- 0;
+	Para fila <- 0 Hasta 3 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 4 Con Paso 1 Hacer
+			Si fila = 0 Entonces
+				matriz2[fila,columna] <- vector1[i];
+				i <- i + 1;
+			SiNo
+				Si fila = 1 Entonces
+					matriz2[fila,columna] <- vector2[k];
+					k <- k + 1;
+				SiNo
+					Si fila = 2 Entonces
+						matriz2[fila,columna] <- vector3[m];
+						m <- m + 1;
+					SiNo
+						Si fila = 3 Entonces
+							matriz2[fila,columna] <- vector4[n];
+							n <- n + 1;
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinPara
+	FinPara
+	
+	Para fila <- 0 Hasta 3 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 4 Con Paso 1 Hacer
+			Escribir matriz2[fila,columna] , " " Sin Saltar;
+		FinPara
+		Escribir " ";
+	FinPara
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>Se debe de imprimir el siguiente cuadro</li>
+					<ul>
+						<li>
+							<figure>
+								<img class="zoom" src="img/cuadro.png" alt="Foto" width="800" height="300">
+							</figure>
+						</li>
+						<br>
+						<li>El usuario deberá insertar la fila y columna de la cual desea ver el resultado, el resultado de cada celda debe estar previamente calculado en una matriz bidimensional la cual cada resultado obedecerá a la fila y columna insertada por el usuario.</li>
+					</ul>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+Proceso punto5
+	
+	Definir fila, columna, i, j, matriz1, opcion, p, q Como Entero;
+	Definir control Como Logico;
+	Definir contenido, matriz2, multi, multi2, entrada Como Caracter;
+	Dimension matriz1[11,11], matriz2[11,11];
+	
+	control <- Verdadero;
+	i <- 0;
+	j <- 0;
+	p <- 0;
+	q <- 0;
+	Para fila <- 0 Hasta 10 Con Paso 1 Hacer
+		j <- j + 1;
+		i <- 0;
+		multi2 <- Concatenar(" x ", Concatenar(ConvertirATexto(j), "]"));
+		Para columna <- 0 Hasta 10 Con Paso 1 Hacer
+			Si columna = 0 Y fila = 0 Entonces
+				matriz2[fila, columna] <- "       ";
+			SiNo
+				Si fila = 0 Entonces
+					matriz2[fila, columna] <- Concatenar("[  ",Concatenar(ConvertirATexto(p),"  ]"));
+					p <- p + 1;
+					j <- 0;
+				SiNo
+					Si columna = 0 Y fila <> 0 Entonces
+						matriz2[fila, columna] <- Concatenar("[  ",Concatenar(ConvertirATexto(q),"  ]"));
+						q <- q + 1;
+					SiNo
+						i <- i + 1;
+						multi <- Concatenar("[", ConvertirATexto(i));
+						matriz2[fila,columna] <- Concatenar(multi, multi2);
+					FinSi
+				FinSi
+			FinSi
+		FinPara
+	FinPara
+	
+	Para fila <- 0 Hasta 10 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 10 Con Paso 1 Hacer
+			Escribir matriz2[fila,columna] , " " Sin Saltar;
+		FinPara
+		Escribir " ";
+	FinPara
+	
+	i <- 0;
+	j <- 0;
+	Para fila <- 0 Hasta 9 Con Paso 1 Hacer
+		j <- j + 1;
+		i <- 0;
+		Para columna <- 0 Hasta 9 Con Paso 1 Hacer
+			i <- i + 1;
+			matriz1[fila,columna] <- i*j;
+		FinPara
+	FinPara
+	
+	Mientras control = Verdadero Hacer
+		Escribir "Elija la opcion deseada";
+		Escribir "1 . Conocer resultado";
+		Escribir "0. Salir del sistema";
+		Leer opcion;
+		
+		Segun opcion Hacer
+			1:
+				Escribir "Ingrese el numero de la fila y columna de la cual desea ver el resultado";
+				Escribir "Ejemplo: Fila: 2, Columna: 4";
+				Escribir "Fila: ";
+				Leer fila;
+				Escribir "Columna: ";
+				Leer columna;
+				Escribir matriz1[fila,columna];
+			0:
+				Escribir "Hasta luego";
+				control <- Falso;
+			De Otro Modo:
+				Escribir "La opción elegida no existe";
+		FinSegun
+	FinMientras
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+			</ol>
+			<p>Adjunto video con la explicacion de los respectivos ejercicios</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/c4iOcrAG6LU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</article>
+	</section>
+	<section id="funciones">
+		<article>
+			<h1>Taller de Funciones </h1>
+			<ol>
+				<li>Organizar todos los puntos del taller de condicionales en modo funciones.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta condicionales 1
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso confirmar(edad)
+	Si edad >= 18 Entonces
+		Escribir "Usted es mayor de edad";
+	FinSi
+	
+FinSubProceso
+Proceso punto1
+	
+	Definir edad Como Entero;
+	Escribir "Por favor ingrese su edad";
+	Leer edad;
+	confirmar(edad);
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta condicionales 2
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso confirmar(edad)
+	Si edad < 18 Entonces
+		Escribir "Usted aún es un niño(a)";
+	FinSi
+FinSubProceso
+
+Proceso punto2
+	Definir edad Como Entero;
+	Escribir "Por favor ingrese su edad";
+	Leer edad;
+	confirmar(edad);
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta condicionales 3
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso confirmar(edad, nombre, apellidos)
+	Si edad >= 18 Entonces
+		
+		Escribir nombre, " ", apellidos, " usted es mayor de edad, por lo tanto puede entrar a la fiesta";
+		
+	SiNo
+		
+		Escribir nombre, " ", apellidos, " usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa";
+		
+	FinSi
+FinSubProceso
+
+Proceso punto3
+	
+	Definir nombre, apellidos Como Caracter;
+	Definir edad Como Entero;
+	Escribir "Por favor ingrese su nombre";
+	Leer nombre;
+	Escribir "Por favor ingrese su apellido";
+	Leer apellidos;
+	Escribir "Por favor ingrese su edad";
+	Leer edad;
+	confirmar(edad, nombre, apellidos);
+	
+FinProceso
+
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta condicionales 4
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso PeliculaDis(opcionPelicula, pelicula, disponible)
+	disponible <- disponible;
+	opcionPelicula <- opcionPelicula;
+	pelicula <- pelicula;
+	Si opcionPelicula = 1 Y disponible = Verdadero Entonces
+		Escribir "Ha adquirido la película ", pelicula;
+		disponible <- Falso;
+	SiNo
+		Si opcionPelicula = 2 Y disponible = Verdadero Entonces
+			Escribir "Ha adquirido la película ", pelicula;
+			disponible <- Falso;
+		SiNo
+			Si opcionPelicula = 2 Y disponible = Verdadero Entonces
+				Escribir "Ha adquirido la película ", pelicula;
+				disponible <- Falso;
+			SiNo
+				Si opcionPelicula = 3 Y disponible = Verdadero Entonces
+					Escribir "Ha adquirido la película ", pelicula;
+					disponible <- Falso;
+				SiNo
+					Si opcionPelicula = 4 Y disponible = Verdadero Entonces
+						Escribir "Ha adquirido la película ", pelicula;
+						disponible <- Falso;
+					SiNo
+						Escribir "La película ", pelicula, "no esta disponible";
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+FinSubProceso
+
+SubProceso ConsultarPeli()
+	Definir pelicula1, pelicula2, pelicula3, pelicula4, pelicula, Lista Como Caracter;
+	Definir disponible1, disponible2, disponible3 ,disponible4 Como Logico;
+	disponible1 <- Verdadero;
+	disponible2 <- Verdadero;
+	disponible3 <- Falso;
+	disponible4 <- Verdadero;
+	pelicula1 <- "Volver al futuro -";
+	pelicula2 <- "Blade Runner 2049 -";
+	pelicula3 <- "Ghost in the Shell -";
+	pelicula4 <- "Akira -";
+	
+	Si disponible1 = Verdadero Entonces
+		Lista <- pelicula1;
+	FinSi
+	Si disponible2 = Verdadero Entonces
+		Lista <- Concatenar(Lista,pelicula2);
+	FinSi
+	Si disponible3 = Verdadero Entonces
+		Lista <- Concatenar(Lista,pelicula3);
+	FinSi
+	Si disponible4 = Verdadero Entonces
+		Lista <- Concatenar(Lista,pelicula4);
+	FinSi
+	Escribir "Esta es una lista de las películas disponibles actualmente: ", Lista;
+FinSubProceso
+
+SubProceso RecibirPeli()
+	Definir pelicula, estado Como Caracter;
+	Escribir "Ingrese el nombre de la película a regresar";
+	Leer pelicula;
+	Escribir  "¿La película presenta algun daño o novedad? Por favor ingrese la información pertinente";
+	Leer estado;
+	Limpiar Pantalla;
+	Escribir "Usted a ingresado la siguiente información ", "La película ", pelicula, " presenta la siguiente información: ", estado;
+FinSubProceso
+
+Proceso punto4
+	
+	Definir pelicula1, pelicula2, pelicula3, pelicula4, pelicula, estado, Lista Como Caracter;
+	Definir disponible1, disponible2, disponible3 ,disponible4 Como Logico;
+	Definir opcion, opcionPelicula Como Entero;
+	
+	disponible1 <- Verdadero;
+	disponible2 <- Verdadero;
+	disponible3 <- Falso;
+	disponible4 <- Verdadero;
+	pelicula1 <- "Volver al futuro -";
+	pelicula2 <- "Blade Runner 2049 -";
+	pelicula3 <- "Ghost in the Shell -";
+	pelicula4 <- "Akira -";
+	
+	Escribir "Elija la opción deseada";
+	Escribir "1. Alquilar película";
+	Escribir "2. Consultar películas disponibles";
+	Escribir "3. Recibir película";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion Hacer
+		
+		1:
+			Escribir "Elija la película deseada";
+			Escribir "1. Voler al futuro";
+			Escribir "2. Blade Runner 2049";
+			Escribir "3. Ghost in the Shell";
+			Escribir "4. Akira";
+			Leer opcionPelicula;
+			
+			Limpiar Pantalla;
+			
+			Segun opcionPelicula Hacer
+				1:
+					PeliculaDis(opcionPelicula, pelicula1, disponible1);
+				2:
+					PeliculaDis(opcionPelicula, pelicula2, disponible2);
+				3:
+					PeliculaDis(opcionPelicula, pelicula3, disponible3);
+				4:
+					PeliculaDis(opcionPelicula, pelicula4, disponible4);
+			FinSegun
+		2:
+			ConsultarPeli();
+		3:
+			RecibirPeli();
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta condicionales 5
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso ComprarProduc()
+	Definir precio1, precio2, precio3 Como Real;
+	Definir caracteristicasProducto1, caracteristicasProducto2, caracteristicasProducto3, producto1, producto2, producto3, regresar Como Caracter;
+	Definir listaProductos, opcion Como Entero;
+	Definir correcto Como Logico;
+	
+	producto1 <- "Analgésicos";
+	producto2 <- "Vendas";
+	producto3 <- "Botiquin";
+	caracteristicasProducto1 <- "Alivian, reducen el dolor";
+	caracteristicasProducto2 <- "Vendar heridas";
+	caracteristicasProducto3 <- "Equipamiento basico";
+	precio1 <- 5999.99;
+	precio2 <- 3560.80;
+	precio3 <- 10999.89;
+	
+	Escribir "Seleccione los productos que desea comprar";
+	Escribir "1. ", producto1;
+	Escribir "2. ", producto2;
+	Escribir "3. ", producto3;
+	Leer listaProductos;
+	
+	Limpiar Pantalla;
+	
+	Segun listaProductos hacer
+		1:
+			Escribir "¿Es correcto el producto a comprar?";
+			Escribir "Producto: ", producto1, " ", caracteristicasProducto1;
+			Leer correcto;
+			
+			Limpiar Pantalla;
+			
+			Si correcto = Verdadero Entonces
+				Escribir "Gracias por comprar en nuestra tienda! :)";
+				Escribir "Producto comprado: ", producto1;
+				Escribir "Total: ", precio1;
+			SiNo
+				Escribir "El producto seleccionado ", producto1, " no es el deseado, cancelando la compra";
+			FinSi
+		2:
+			Escribir "¿Es correcto el producto a comprar?";
+			Escribir "Producto: ", producto2, " ", caracteristicasProducto2;
+			Leer correcto;
+			
+			Limpiar Pantalla;
+			
+			Si correcto = Verdadero Entonces
+				Escribir "Gracias por comprar en nuestra tienda! :)";
+				Escribir "Producto comprado: ", producto2;
+				Escribir "Total: ", precio2;
+			SiNo
+				Escribir "El producto seleccionado ", producto2, " no es el deseado, cancelando la compra";
+			FinSi
+		3:
+			Escribir "¿Es correcto el producto a comprar?";
+			Escribir "Producto: ", producto3, " ", caracteristicasProducto3;
+			Leer correcto;
+			
+			Limpiar Pantalla;
+			
+			Si correcto = Verdadero Entonces
+				Escribir "Gracias por comprar en nuestra tienda! :)";
+				Escribir "Producto comprado: ", producto3;
+				Escribir "Total: ", precio3;
+			SiNo
+				Escribir "El producto seleccionado ", producto3, " no es el deseado, cancelando la compra";
+			FinSi
+	FinSegun	
+FinSubProceso
+
+SubProceso ConsultarPrecio()
+	
+	Definir precio1, precio2, precio3 Como Real;
+	Definir caracteristicasProducto1, caracteristicasProducto2, caracteristicasProducto3, producto1, producto2, producto3, regresar Como Caracter;
+	Definir listaProductos, opcion Como Entero;
+	Definir correcto Como Logico;
+	
+	producto1 <- "Analgésicos";
+	producto2 <- "Vendas";
+	producto3 <- "Botiquin";
+	caracteristicasProducto1 <- "Alivian, reducen el dolor";
+	caracteristicasProducto2 <- "Vendar heridas";
+	caracteristicasProducto3 <- "Equipamiento basico";
+	precio1 <- 5999.99;
+	precio2 <- 3560.80;
+	precio3 <- 10999.89;
+	
+	Escribir "Lista de precios por producto";
+	Escribir "Precio: ", precio1, " ", producto1, " Caracteristicas: ", caracteristicasProducto1;
+	Escribir "Precio: ", precio2, " ", producto2, " Caracteristicas: ", caracteristicasProducto2;
+	Escribir "Precio: ", precio3, " ", producto3, " Caracteristicas: ", caracteristicasProducto3;
+	
+FinSubProceso
+
+SubProceso RegresarProduc()
+	
+	Definir regresar Como Caracter;
+	Escribir "Ingrese el producto que desea devolver";
+	Leer regresar;
+	Escribir "El producto a devolver es: ", regresar;
+	
+FinSubProceso
+Proceso punto5
+	Definir opcion Como Entero;
+	
+	Escribir "Elija la opción deseada";
+	Escribir "1. Comprar productos";
+	Escribir "2. Consultar precios por producto";
+	Escribir "3. Devolver producto";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion hacer
+		
+		1:
+			ComprarProduc();
+		2:
+			ConsultarPrecio();
+		3:
+			RegresarProduc();
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta condicionales 6
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso IngresarMoto()
+	Definir placa, motocicleta, arreglos, ingreso, salida, observaciones Como Caracter;
+
+	Escribir "Por favor digite la placa de la motocicleta a ingresar: ";
+	Leer placa;
+	
+	Escribir "Por favor digite el modelo de la motocicleta: ";
+	Leer motocicleta;
+	
+	Escribir "Por favor digite la fecha de ingreso de la motocicleta: ";
+	Leer ingreso;
+	
+	Escribir "Por favor ingrese las observaciones por parte del cliente dadas a la motocicleta: ";
+	Leer observaciones;
+	
+	Limpiar Pantalla;
+	
+	Escribir "La informacion ingresada es la siguiente: ";
+	Escribir "La motocicleta con placas: ", placa;
+	Escribir "De tipo: ", motocicleta;
+	Escribir "Fue ingresada el dia: ", ingreso;
+	Escribir "Con las siguientes observaciones: ", observaciones;
+FinSubProceso
+SubProceso SalidaMoto()
+	Definir placa, motocicleta, arreglos, ingreso, salida, observaciones, novedades Como Caracter;
+	Definir arreglosValidacion Como Logico;
+	
+	Escribir "Por favor digite la placa de la motocicleta a retirar: ";
+	Leer placa;
+	
+	Escribir "Por favor digite el modelo de la motocicleta: ";
+	Leer motocicleta;
+	
+	Escribir "Por favor digite la fecha de salida de la motocicleta: ";
+	Leer salida;
+	
+	Escribir "Por favor ingrese las novedades hechas a la motocicleta: ";
+	Leer novedades;
+	
+	Escribir "¿Se ha hecho algun arreglo que involucre piezas nuevas?";
+	Leer arreglosValidacion;
+	
+	Si arreglosValidacion = Verdadero Entonces
+		
+		Escribir "Por favor ingrese los repuestos utilizados en el arreglo: ";
+		Leer arreglos;
+		
+		Limpiar Pantalla;
+		
+		Escribir "La información es la siguiente: ";
+		Escribir "La motocicleta con placas: ", placa;
+		Escribir "De tipo: ", motocicleta;
+		Escribir "Salio el dia: ", salida;
+		Escribir "Con las siguientes novedades: ", novedades;
+		Escribir "Y con los nuevos recambios: ", arreglos;
+		
+	SiNo
+		
+		Limpiar Pantalla;
+		
+		Escribir "La información es la siguiente: ";
+		Escribir "La motocicleta con placas: ", placa;
+		Escribir "De tipo: ", motocicleta;
+		Escribir "Salio el dia: ", salida;
+		Escribir "Con las siguientes novedades: ", novedades;
+		
+	FinSi
+FinSubProceso
+
+Proceso punto6
+	
+	Definir opcion Como Entero;
+	
+	Escribir "Bienvenido a taller de motos El Maquinista";
+	Escribir "Por favor elija la opción deseada";
+	Escribir "1. Ingresar motocicleta";
+	Escribir "2. Salida motocicleta";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion Hacer
+		1:
+			IngresarMoto();
+		2:
+			SalidaMoto();
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta condicionales 7
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso imc <- CalcularIMC(nombre, apellido, cedula, peso, estatura)
+	Definir imc Como Real;
+	imc <- peso/(estatura)^2;
+	Escribir imc;
+	
+	Escribir "El ciudadano ", nombre, " ", apellido, " con cedula ", cedula, " con peso ", peso, " y una estatura de ", estatura;
+	
+	Si (imc<18.5) Entonces
+		Escribir "Tiene un indice de masa corporal de: ", imc, " y actualmente tiene bajo peso";
+	SiNo
+		Si (imc>=18.5 y imc<=24.9) Entonces
+			Escribir "Tiene un indice de masa corporal de: ", imc, " y actualmente tiene un peso normal"; 
+		SiNo
+			Si (imc>=25 y imc<=29.9) Entonces
+				Escribir "Tiene un indice de masa corporal de: ", imc, " y actualmente tiene sobrepeso";
+			SiNo
+				Si (imc>30) Entonces
+					Escribir "Tiene un indice de masa corporal de: ", imc, " y actualmente tiene obesidad";
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+FinSubProceso
+Proceso punto7
+	
+	Definir peso, estatura, imc Como Real;
+	Definir nombre, apellido, cedula Como Caracter;
+	
+	Escribir "Bienvenido al sistema :)";
+	Escribir "Por favor ingrese los datos del paciente";
+	Escribir "Nombres: ";
+	Leer nombre;
+	Escribir "Apellidos: ";
+	Leer apellido;
+	Escribir "Cedula: ";
+	Leer cedula;
+	Escribir "Peso en kilogramos: ";
+	Leer peso;
+	Escribir "Estatura en metros: ";
+	Leer estatura;
+	
+	Limpiar Pantalla;
+	
+	Escribir "La informacion del paciente es la siguiente: ";
+	Escribir "El ciudadano ", nombre, " ", apellido, " con cedula ", cedula, " con peso ", peso, " y una estatura de ", estatura;
+	
+	Escribir "Ahora se procedera a calcular el IMC del paciente";
+	Escribir "...";
+	Escribir "...";
+	Escribir "...";
+	Escribir "...";
+	
+	Limpiar Pantalla;
+	
+	Escribir CalcularIMC(nombre, apellido, cedula, peso, estatura);
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta condicionales 8
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso RegistarPedi()
+	Definir pedidoTorta, pedidoSabor, pedidoDecoracion, pedidoPorciones Como Caracter;
+	Definir numeroVentas Como Entero;
+	numeroVentas <- 0;
+	Escribir "Por favor ingrese los detalles del pedido";
+	Escribir "Tipo de torta: ";
+	Leer pedidoTorta;
+	Escribir "Sabor: ";
+	Leer pedidoSabor;
+	Escribir "Decoraciones: ";
+	Leer pedidoDecoracion;
+	Escribir "Porciones: ";
+	Leer pedidoPorciones;
+	
+	Limpiar Pantalla;
+	
+	Escribir "Los detalles del pedido son los siguientes: ";
+	Escribir "Tipo de torta: ", pedidoTorta;
+	Escribir "Sabor: ", pedidoSabor;
+	Escribir "Decoraciones: ", pedidoDecoracion;
+	Escribir "Porciones: ", pedidoPorciones;
+	numeroVentas <- numeroVentas + 1;
+FinSubProceso
+
+SubProceso TortasDisp()
+	Definir torta1, torta2, torta3, saborA, saborB, decoracionA, decoracionB Como Caracter;
+	Definir porcionesA, porcionesB Como Entero;
+	
+	torta1 <- "Torta de dos pisos";
+	torta2 <- "Torta fría";
+	torta3 <- "Torta de tres pisos";
+	saborA <- "Chocolate";
+	saborB <- "Mora";
+	decoracionA <- "Pedacitos de chocolate";
+	decoracionB <- "Coco rayado";
+	porcionesA <- 8;
+	porcionesB <- 4;
+	
+	Escribir "Esta es una lista de las tortas disponibles: ";
+	Escribir torta1, " sabor ", saborA, " con ", decoracionA, " de ", porcionesA, " porciones";
+	Escribir torta2, " sabor ", saborB, " con ", decoracionA, " de ", porcionesB, " porciones";
+	Escribir torta3, " sabor ", saborA, " con ", decoracionB, " de ", porcionesB, " porciones";
+FinSubProceso
+
+SubProceso NumVentas()
+	Definir numeroVentas Como Entero;
+	numeroVentas <- 0;
+	Escribir "Ventas realizadas el dia de hoy: ";
+	Escribir "Se han vendido un total de ", numeroVentas, " el dia de hoy";
+FinSubProceso
+Proceso punto8
+	Definir opcion Como Entero;
+	
+	Escribir "Bienvenido a la pasteleria de Don Carlos";
+	Escribir "Elija la accion deseada";
+	Escribir "1. Registrar pedido";
+	Escribir "2. Tortas disponibles";
+	Escribir "3. Ventas del dia de hoy";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion Hacer
+		1:
+			RegistarPedi();
+		2:
+			TortasDisp();
+		3:
+			NumVentas();
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta condicionales 9
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso area <- AreaRectangulo(base, altura)
+	Definir area Como Real;
+	area <- base*altura;
+FinSubProceso
+SubProceso area <- AreaTriangulo(base, altura)
+	Definir area Como Real;
+	area <- base*altura/2;
+FinSubProceso
+SubProceso area <- AreaTrapecio(base1, base2, altura)
+	Definir area Como Real;
+	area <- (base1+base2)*altura/2;
+FinSubProceso
+Proceso punto9
+	
+	Definir base, altura, base1, base2, area Como Real;
+	Definir opcion Como Entero;
+	
+	Escribir "Bienvenido, por favor seleccione la operacion a realizar";
+	Escribir "1. Calcular area del rectangulo";
+	Escribir "2. Calcular area del triangulo";
+	Escribir "3. Calcular area del trapecio";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Por favor ingrese los datos necesarios";
+			Escribir "Base del rectangulo";
+			Leer base;
+			Escribir "Altura del rectangulo";
+			Leer altura;
+			area <- AreaRectangulo(base, altura);
+			Escribir "El area del rectangulo es: ", area;
+			
+			
+		2:
+			Escribir "Por favor ingrese los datos necesarios";
+			Escribir "Base del triangulo";
+			Leer base;
+			Escribir "Altura del triangulo";
+			Leer altura;
+			area <- AreaTriangulo(base, altura);
+			Escribir "El area del triangulo es: ", area;
+			
+		3:
+			Escribir "Por favor ingrese los datos necesarios";
+			Escribir "Base mayor del trapecio";
+			Leer base1;
+			Escribir "Base menor del trapecio";
+			Leer base2;
+			Escribir "Altura del trapecio";
+			Leer altura;
+			area <- AreaTrapecio(base1, base2, altura);
+			Escribir "El area del trapecio es: ", area;
+			
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta condicionales 10
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso RealizarRetiro(retiro)
+	Definir cantidad Como Real;
+	cantidad <- 300000;
+	Si retiro > cantidad Entonces
+		Escribir "El valor a retirar supera la cantidad que posee actualmente";
+	SiNo
+		Escribir "Retirando ", retiro, "$ Por favor espere";
+		cantidad <- cantidad-retiro;
+		Escribir cantidad, "$ restantes en su cuenta";
+	FinSi
+FinSubProceso
+SubProceso RealizarIngreso(ingreso)
+	Definir cantidad Como Real;
+	cantidad <- 300000;
+	Si ingreso <= 0 Entonces
+		Escribir "El valor a ingresar no es valido";
+	SiNo
+		Escribir "Depositando ", ingreso, "$ a su cuenta";
+		cantidad <- cantidad+ingreso;
+		Escribir "Actualmente tiene ", cantidad, "$ en su cuenta";
+	FinSi
+FinSubProceso
+Proceso punto10
+	
+	Definir titular Como Caracter;
+	Definir cantidad, ingreso, retiro Como Real;
+	Definir opcion Como Entero;
+	
+	titular <- "Julian Mauricio Correa Martinez";
+	cantidad <- 300000;
+	
+	Escribir "Bienvenido a Su banco fiel";
+	Escribir "Por favor elija la opcion deseada";
+	Escribir "1. Realizar retiro";
+	Escribir "2. Realizar ingreso";
+	Escribir "3. Consultar saldo";
+	Escribir "0. Salir";
+	Leer opcion;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Por favor ingrese el monto a retirar";
+			Leer retiro;
+			RealizarRetiro(retiro);
+		2:
+			Escribir "Por favor ingrese el monto a depositar";
+			Leer ingreso;
+			RealizarIngreso(ingreso);
+		3:
+			Escribir "Actualmente el titular ", titular, " posee ", cantidad, "$ en su cuenta";
+		0:
+			Escribir "Hasta luego";
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+	FinSegun
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>Organizar los puntos 6, 7 y 8 del taller de ciclos en modo funciones.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta ciclos 6
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso nuevaI <- AddContacto(i, matriz, nombre, telefono, organizacion)
+	Definir fila, columna, j, nuevaI Como Entero;
+	Definir repetido, control Como Logico;
+	repetido <- falso;
+	control <- falso;
+	Para fila <- i - 1 Hasta i - 1 Hacer
+		Para columna <- 0 Hasta 2 Hacer
+			Si matriz[fila,0] = ""  O matriz[fila,1] = "" O matriz[fila,2] = "" Entonces
+				Si columna = 0 Entonces
+					matriz[fila,columna] <- nombre;
+				SiNo
+					Si columna = 1 Entonces
+						Para j <- 0 Hasta i - 1 Con Paso 1 Hacer
+							Si control = Falso Y repetido = Falso Entonces
+								Si telefono = matriz[j,1] Entonces
+									Escribir "El numero de telefono ya existe";
+									repetido <- Verdadero;
+								SiNo
+									matriz[fila,columna] <- telefono;
+									control <- Verdadero;
+								FinSi
+							FinSi
+						FinPara
+					FinSi
+					Si columna = 2 Y repetido = Falso Entonces
+						matriz[fila,columna] <- organizacion;
+						nuevaI <- i;
+					SiNo
+						Si repetido = Verdadero Entonces
+							Para fila <- i - 1 Hasta i - 1 Hacer
+								Para columna <- 0 Hasta 2 Hacer
+									Si columna = 0 Entonces
+										matriz[fila,columna] <- "";
+									SiNo
+										Si columna = 1 Entonces
+											matriz[fila,columna] <- "";
+										SiNo
+											Si columna = 2 Entonces
+												matriz[fila,columna] <- "";
+											FinSi
+										FinSi
+									FinSi
+								FinPara
+							FinPara
+							nuevaI <- i - 1;
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinPara
+	FinPara
+FinSubProceso
+SubProceso BuscarContacto(i, matriz, nombre)
+	Definir fila, columna, j Como Entero;
+	Definir control Como Logico;
+	control <- falso;
+	Si i <> 0 Entonces
+		Para j <- 0 Hasta 2 Hacer
+			Si control = Falso Entonces
+				Si nombre = matriz[j,0] Entonces
+					Para columna <- 0 Hasta 2 Hacer
+						Escribir matriz[j,columna] , " " Sin Saltar;
+					FinPara
+					Escribir " ";
+					control <- Verdadero;
+				FinSi
+			FinSi
+		FinPara
+		Si control = Falso Entonces
+			Escribir "El contacto no existe";
+		FinSi
+	SiNo
+		Escribir "No hay contactos";
+	FinSi
+	
+FinSubProceso
+SubProceso newI <- EliminarContacto(i, matriz, telefono)
+	Definir fila, columna, j, newI Como Entero;
+	Definir control Como Logico;
+	control <- falso;
+	Para j <- 0 Hasta i - 1 Hacer
+		Si control = Falso Entonces
+			Si telefono = matriz[j,1] Entonces
+					Para columna <- 0 Hasta 2 Hacer
+						Si columna = 0 Entonces
+							matriz[j,columna] <- "";
+						SiNo
+							Si columna = 1 Entonces
+								matriz[j,columna] <- "";
+							SiNo
+								Si columna = 2 Entonces
+									matriz[j,columna] <- "";
+									control <- Verdadero;
+								FinSi
+							FinSi
+						FinSi
+					FinPara
+				newI <- i - 1;
+			FinSi
+		FinSi
+	FinPara
+	Si control = Falso Entonces
+		Escribir "El contacto no existe";
+	FinSi
+FinSubProceso
+Proceso ciclo6
+	
+	Definir matriz, nombre, nombre1, nombre2, nombre3, telefono, telefono1, telefono2, telefono3, organizacion, organizacion1, organizacion2, organizacion3 Como Caracter;
+	Definir fila, columna, opcion, i Como Entero;
+	Dimension matriz[3,3];
+	Definir control Como Logico;
+	
+	matriz[0,0] <- "";
+	matriz[0,1] <- "";
+	matriz[0,2] <- "";
+	matriz[1,0] <- "";
+	matriz[1,1] <- "";
+	matriz[1,2] <- "";
+	matriz[2,0] <- "";
+	matriz[2,1] <- "";
+	matriz[2,2] <- "";
+	control <- Verdadero;
+	telefono <- "";
+	nombre <- "";
+	organizacion <- "";
+	i <- 0;
+	
+	Mientras control = Verdadero Hacer
+		
+		Escribir "Bienvenido a sus contactos";
+		Escribir "1. Añadir contacto";
+		Escribir "2. Buscar contacto";
+		Escribir "3. Eliminar contacto";
+		Escribir "0. Salir";
+		Leer opcion;
+		Limpiar Pantalla;
+		
+		Segun opcion Hacer
+			1:
+				Si i <= 2 Entonces
+					Escribir "Nombre contacto: ";
+					Leer nombre;
+					
+					Escribir "Telefono: ";
+					Leer telefono;
+					
+					Escribir "Organizacion: ";
+					Leer organizacion;
+					i <- i + 1;
+					i <- AddContacto(i, matriz, nombre, telefono, organizacion);
+				SiNo
+					Escribir "No se pueden agregar mas contactos";
+				FinSi
+			2:
+				Escribir "Ingrese el nombre del contacto que desea buscar";
+				nombre <- "";
+				Leer nombre;
+				BuscarContacto(i, matriz, nombre);
+			3:
+				Escribir "Ingrese el numero de telefono que desea eliminar";
+				telefono <- "";
+				Leer telefono;
+				i <- EliminarContacto(i, matriz, telefono);
+			0:
+				Escribir "Hasta luego";
+				control <- Falso;
+			De Otro Modo:
+				Escribir "La opcion elegida no existe";
+		FinSegun
+	FinMientras
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta ciclo 7
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso nuevaI <- IngresarVehiculo(i, matriz, placa, marca, telefono, nombre)
+	Definir fila, columna, j, nuevaI Como Entero;
+	Definir repetido, control Como Logico;
+	repetido <- falso;
+	control <- falso;
+	Para fila <- i - 1 Hasta i - 1 Hacer
+		Para columna <- 0 Hasta 3 Hacer
+			Si matriz[fila,0] = ""  O matriz[fila,1] = "" O matriz[fila,2] = "" O matriz[fila,3] = "" Entonces
+				Si columna = 0 Entonces
+					matriz[fila,columna] <- marca;
+				SiNo
+					Si columna = 1 Entonces
+						Para j <- 0 Hasta i - 1 Con Paso 1 Hacer
+							Si control = Falso Y repetido = Falso Entonces
+								Si placa = matriz[j,1] Entonces
+									Escribir "El vechiculo ingresado ya existe";
+									repetido <- Verdadero;
+								SiNo
+									matriz[fila,columna] <- placa;
+									control <- Verdadero;
+								FinSi
+							FinSi
+						FinPara
+					FinSi
+					Si columna = 2 Y repetido = Falso Entonces
+						matriz[fila,columna] <- telefono;
+					SiNo
+						Si repetido = Verdadero Entonces
+							Para fila <- i - 1 Hasta i - 1 Hacer
+								Para columna <- 0 Hasta 3 Hacer
+									Si columna = 0 Entonces
+										matriz[fila,columna] <- "";
+									SiNo
+										Si columna = 1 Entonces
+											matriz[fila,columna] <- "";
+										SiNo
+											Si columna = 2 Entonces
+												matriz[fila,columna] <- "";
+											SiNo
+												Si columna = 3 Entonces
+													matriz[fila,columna] <- "";
+												FinSi
+											FinSi
+										FinSi
+									FinSi
+								FinPara
+							FinPara
+							nuevaI <- i - 1;
+						FinSi
+					FinSi
+					Si columna = 3 Y repetido = Falso Entonces
+						matriz[fila,columna] <- nombre;
+						nuevaI <- i;
+					FinSi
+				FinSi
+			FinSi
+		FinPara
+	FinPara
+FinSubProceso
+SubProceso newI <- RetirarVehiculo(i, matriz, placa)
+	Definir fila, columna, j, newI Como Entero;
+	Definir control Como Logico;
+	control <- falso;
+	Para j <- 0 Hasta i - 1 Hacer
+		Si control = Falso Entonces
+			Si placa = matriz[j,1] Entonces
+				Para columna <- 0 Hasta 3 Hacer
+					Si columna = 0 Entonces
+						matriz[j,columna] <- "";
+					SiNo
+						Si columna = 1 Entonces
+							matriz[j,columna] <- "";
+						SiNo
+							Si columna = 2 Entonces
+								matriz[j,columna] <- "";
+							SiNo
+								Si columna = 3 Entonces
+									matriz[j,columna] <- "";
+									control <- Verdadero;
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+				FinPara
+				newI <- i - 1;
+			FinSi
+		FinSi
+	FinPara
+	Si control = Falso Entonces
+		Escribir "El vehiculo no existe";
+	FinSi
+FinSubProceso
+SubProceso ConsultarVehiculo(i, matriz, placa)
+	Definir fila, columna, j Como Entero;
+	Definir control Como Logico;
+	control <- falso;
+	Si i <> 0 Entonces
+		Para j <- 0 Hasta 4 Hacer
+			Si control = Falso Entonces
+				Si placa = matriz[j,1] Entonces
+					Para columna <- 0 Hasta 3 Hacer
+						Escribir matriz[j,columna] , " " Sin Saltar;
+					FinPara
+					Escribir " ";
+					control <- Verdadero;
+				FinSi
+			FinSi
+		FinPara
+		Si control = Falso Entonces
+			Escribir "El vehiculo no existe";
+		FinSi
+	SiNo
+		Escribir "No hay vehiculos";
+	FinSi	
+FinSubProceso
+Proceso ciclo7
+	
+	Definir control Como Logico;
+	Definir opcion, i, fila, columna Como Entero;
+	Definir placa, marca, nombre, telefono, matriz Como Caracter;
+	Dimension matriz[5,4];
+	control <- Verdadero;
+	i <- 0;
+	Para fila <- 0 Hasta 4 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 3 Con Paso 1 Hacer
+			matriz[fila,columna] <- "";
+		FinPara
+	FinPara
+	
+	Mientras control = Verdadero Hacer
+		Escribir "Bienvenido al parqueadero El guardian";
+		Escribir "1. Ingresar vehiculo";
+		Escribir "2. Retirar vehiculo";
+		Escribir "3. Consultar vehiculo";
+		Escribir "0. Salir";
+		Leer opcion;
+		Limpiar Pantalla;
+		
+		Segun opcion Hacer
+			1:
+				Si i >= 5 Entonces
+					Escribir "Ya no se pueden ingresar mas vehiculos";
+				SiNo
+					Escribir "Placa: ";
+					Leer placa;
+						
+					Escribir "Marca: ";
+					Leer marca;
+						
+					Escribir "Telefono propietario: ";
+					Leer telefono;
+					
+					Escribir "Nombre propietario: ";
+					Leer nombre;
+					i <- i + 1;
+					i <- IngresarVehiculo(i, matriz, placa, marca, telefono, nombre);
+				FinSi
+			2:
+				Escribir "Ingrese la placa del vehiculo que desea eliminar";
+				placa <- "";
+				Leer placa;
+				i <- RetirarVehiculo(i, matriz, placa);
+			3:
+				Escribir "Ingrese la placa del vehiculo que desea buscar";
+				placa <- "";
+				Leer placa;
+				ConsultarVehiculo(i, matriz, placa);
+			0:
+				Escribir "Hasta luego";
+				control <- Falso;
+			De Otro Modo:
+				Escribir "La opcion elegida no existe";
+		FinSegun
+	FinMientras
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta ciclo 8
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso nuevaI <- IngresarUsuario(i, matriz, usuario, aprovado, presentado)
+	Definir fila, columna, j, nuevaI Como Entero;
+	Definir repetido, control Como Logico;
+	repetido <- falso;
+	control <- falso;
+	Para fila <- i - 1 Hasta i - 1 Hacer
+		Para columna <- 0 Hasta 2 Hacer
+			Si matriz[fila,0] = ""  O matriz[fila,1] = "" O matriz[fila,2] = "" Entonces
+				Si columna = 0 Entonces
+					matriz[fila,columna] <- presentado;
+				SiNo
+					Si columna = 1 Entonces
+						Para j <- 0 Hasta i - 1 Con Paso 1 Hacer
+							Si control = Falso Y repetido = Falso Entonces
+								Si usuario = matriz[j,1] Entonces
+									Escribir "El usuario ingresado ya existe";
+									repetido <- Verdadero;
+								SiNo
+									matriz[fila,columna] <- usuario;
+									control <- Verdadero;
+								FinSi
+							FinSi
+						FinPara
+					FinSi
+					Si columna = 2 Y repetido = Falso Entonces
+						matriz[fila,columna] <- aprovado;
+						nuevaI <- i;
+					SiNo
+						Si repetido = Verdadero Entonces
+							Para fila <- i - 1 Hasta i - 1 Hacer
+								Para columna <- 0 Hasta 2 Hacer
+									Si columna = 0 Entonces
+										matriz[fila,columna] <- "";
+									SiNo
+										Si columna = 1 Entonces
+											matriz[fila,columna] <- "";
+										SiNo
+											Si columna = 2 Entonces
+												matriz[fila,columna] <- "";
+											FinSi
+										FinSi
+									FinSi
+								FinPara
+							FinPara
+							nuevaI <- i - 1;
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinPara
+	FinPara
+FinSubProceso
+SubProceso ConsultarPresent(i, matriz)
+	Definir fila, columna, j, bandera Como Entero;
+	bandera <- 0;
+	Si i <> 0 Entonces
+		Para j <- 0 Hasta i - 1 Hacer
+			Si matriz[j,0] = "si" Entonces
+				Escribir "El usuario: ", matriz[j,1] , " presento el curso" Sin Saltar;
+				Escribir " ";
+				bandera <- bandera + 1;
+			FinSi
+		FinPara
+		Si bandera <= 0 Entonces
+			Escribir "Ningun usuario a presentado el curso";
+		FinSi
+	SiNo
+		Escribir "No hay Usuarios en el sistema";
+	FinSi
+FinSubProceso
+SubProceso ConsultarAprova(i, matriz)
+	Definir fila, columna, j, bandera Como Entero;
+	bandera <- 0;
+	Si i <> 0 Entonces
+		Para j <- 0 Hasta i - 1 Hacer
+			Si matriz[j,2] = "si" Entonces
+				Escribir "El usuario: ", matriz[j,1] , " aprovo el curso" Sin Saltar;
+				Escribir " ";
+				bandera <- bandera + 1;
+			FinSi
+		FinPara
+		Si bandera <= 0 Entonces
+			Escribir "Ningun usuario aprovo el curso";
+		FinSi
+	SiNo
+		Escribir "No hay Usuarios en el sistema";
+	FinSi
+FinSubProceso
+Proceso ciclo8
+	
+	Definir opcion, i, fila, columna Como Entero;
+	Definir usuario, matriz, aprovado, presentado  Como Caracter;
+	Definir control Como Logico;
+	Dimension matriz[9,3];
+	control <- Verdadero;
+	i <- 0;
+	Para fila <- 0 Hasta 8 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 2 Con Paso 1 Hacer
+			matriz[fila,columna] <- "";
+		FinPara
+	FinPara
+	
+	Mientras control = Verdadero Hacer
+		Escribir "Bienvenido a la escuela automovilistica El Maestro";
+		Escribir "1. Ingresar usuario";
+		Escribir "2. Consultar presentados";
+		Escribir "3. Consultar resultados";
+		Escribir "0. Salir";
+		Leer opcion;
+		Limpiar Pantalla;
+		
+		Segun opcion Hacer
+			1:
+				Si i >= 8 Entonces
+					Escribir "Ya no se admiten mas usuarios";
+				SiNo
+					Escribir "Ingrese el nombre del usuario";
+					Leer usuario;
+					Escribir "¿El usuario aprovo el curso?";
+					Leer aprovado;
+					Escribir "¿El usuario presento el curso?";
+					Leer presentado;
+					i <- i + 1;
+					i <- IngresarUsuario(i, matriz, usuario, aprovado, presentado);
+				FinSi
+			2:
+				Escribir "Consultando usuarios que presentaron el curso";
+				ConsultarPresent(i, matriz);
+			3:
+				Escribir "Consultando usuarios que aprovaron el curso";
+				ConsultarAprova(i, matriz);
+			0:
+				Escribir "Hasta luego";
+				control <- Falso;
+			De Otro Modo:
+				Escribir "La opcion elegida no existe";
+		FinSegun
+	FinMientras
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<li>Organizar todos los puntos del taller de arreglos en modo funciones.</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta arreglos 1
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso Resultado(vector)
+	Definir j Como Entero;
+	Para j <- 0 Hasta 4 Con Paso 1 Hacer
+		Escribir "[", j, "] = ", vector[j];
+	FinPara
+FinSubProceso
+Proceso arreglo1
+	
+	Definir i Como Entero;
+	Definir vector, dato Como Caracter;
+	Dimension vector[5];
+	
+	Para i <- 0 Hasta 4 Con Paso 1 Hacer
+		Limpiar Pantalla;
+		Escribir "Ingrese un numero";
+		Leer dato;
+		vector[i] <- dato;
+	FinPara
+	Limpiar Pantalla;
+	Resultado(vector);
+	
+FinProceso
+
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta arreglos 2
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso NumeroPar(vector)
+	Definir i Como Entero;
+	Definir control Como Logico;
+	control <- Verdadero;
+	i <- 0;
+	Escribir " ";
+	Escribir "Numero par ";
+	Mientras control = Verdadero Hacer
+		
+		Si vector[i] mod 2 = 0 Entonces
+			Escribir Sin Saltar vector[i], " ";
+			i <- i + 1;
+		SiNo
+			i <- i + 1;
+		FinSi
+		Si i >= 20  Entonces
+			control <- Falso;
+		FinSi
+		
+	FinMientras
+FinSubProceso
+SubProceso NumeroImpar(vector)
+	Definir i Como Entero;
+	Definir control Como Logico;
+	control <- Verdadero;
+	i <- 0;
+	Escribir " ";
+	Escribir "Numero impar ";
+	Mientras control = Verdadero Hacer
+		
+		Si vector[i] mod 2 = 0 Entonces
+			i <- i + 1;
+		SiNo
+			Escribir Sin Saltar vector[i], " ";
+			i <- i + 1;
+		FinSi
+		Si i >= 20  Entonces
+			control <- Falso;
+		FinSi
+		
+	FinMientras
+FinSubProceso
+Proceso arreglo2
+	
+	Definir i, vector Como Entero;
+	Definir control Como Logico;
+	Dimension vector[20];
+	control <- Verdadero;
+	
+	i <- 0;
+	Para i <- 0 Hasta 19 Con Paso 1 Hacer
+		vector[i] <- azar(100)+1;
+		Escribir vector[i], " " Sin Saltar;
+	FinPara
+	
+	NumeroPar(vector);
+	NumeroImpar(vector);
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta arreglos 3
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso NumeroPrimo(vector)
+	Definir i, j, cont, num Como Entero;
+	Definir control Como Logico;
+	i <- 0;
+	j <- 1;
+	Escribir " ";
+	Escribir "Numero primo";
+	Para i <- 0 Hasta 19 Con Paso 1 Hacer
+		num <- vector[i];
+		cont <- 0;
+		j <- 1;
+		Mientras j <= num Hacer
+			Si num % j == 0 Entonces
+				cont <- cont + 1;
+			FinSi
+			j <- j + 1;
+		FinMientras
+		
+		Si cont == 2 Entonces
+			Escribir num, " " Sin Saltar;
+		FinSi
+	FinPara
+FinSubProceso
+Proceso arreglo3
+	
+	Definir i, vector Como Entero;
+	Definir control Como Logico;
+	Dimension vector[20];
+	control <- Verdadero;
+	
+	i <- 0;
+	Para i <- 0 Hasta 19 Con Paso 1 Hacer
+		vector[i] <- i + 1;
+		Escribir vector[i], " " Sin Saltar;
+	FinPara
+	
+	NumeroPrimo(vector);
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta arreglos 4
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso Orden(matriz)
+	Definir fila, columna, aux, j Como Entero;
+	
+	j <- 0;
+	Para fila <- 1 Hasta 1 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 4 Con Paso 1 Hacer
+			Para j <- columna+1 Hasta 4 Con Paso 1 Hacer
+				Si matriz[fila,columna] < matriz[fila,j] Entonces
+					aux <- matriz[fila,columna];
+					matriz[fila,columna] <- matriz[fila,j];
+					matriz[fila,j] <- aux;
+				FinSi
+			FinPara
+		FinPara
+	FinPara
+	
+	j <- 0;
+	Para fila <- 3 Hasta 3 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 4 Con Paso 1 Hacer
+			Para j <- columna+1 Hasta 4 Con Paso 1 Hacer
+				Si matriz[fila,columna] < matriz[fila,j] Entonces
+					aux <- matriz[fila,columna];
+					matriz[fila,columna] <- matriz[fila,j];
+					matriz[fila,j] <- aux;
+				FinSi
+			FinPara
+		FinPara
+	FinPara
+FinSubProceso
+SubProceso Salida(matriz)
+	Definir fila, columna Como Entero;
+	Para fila <- 0 Hasta 3 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 4 Con Paso 1 Hacer
+			Escribir matriz[fila,columna] , " " Sin Saltar;
+		FinPara
+		Escribir " ";
+	FinPara
+FinSubProceso
+Proceso arreglo4
+	
+	Definir fila, columna, matriz, i Como Entero;
+	Dimension matriz[4,5];
+	
+	i <- 0;
+	Para fila <- 0 Hasta 3 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 4 Con Paso 1 Hacer
+			i <- i + 1;
+			matriz[fila,columna] <- i;
+		FinPara
+	FinPara
+	
+	Para fila <- 0 Hasta 3 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 4 Con Paso 1 Hacer
+			Escribir matriz[fila,columna] , " " Sin Saltar;
+		FinPara
+		Escribir " ";
+	FinPara
+	
+	Orden(matriz);
+	Salida(matriz);
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta arreglos 5
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre>
+<code>
+SubProceso LlenarTabla(matriz2, matriz1)
+	Definir fila, columna, i, j, opcion, p, q Como Entero;
+	Definir multi, multi2, entrada Como Caracter;
+	
+	i <- 0;
+	j <- 0;
+	p <- 0;
+	q <- 0;
+	Para fila <- 0 Hasta 10 Con Paso 1 Hacer
+		j <- j + 1;
+		i <- 0;
+		multi2 <- Concatenar(" x ", Concatenar(ConvertirATexto(j), "]"));
+		Para columna <- 0 Hasta 10 Con Paso 1 Hacer
+			Si columna = 0 Y fila = 0 Entonces
+				matriz2[fila, columna] <- "       ";
+			SiNo
+				Si fila = 0 Entonces
+					matriz2[fila, columna] <- Concatenar("[  ",Concatenar(ConvertirATexto(p),"  ]"));
+					p <- p + 1;
+					j <- 0;
+				SiNo
+					Si columna = 0 Y fila <> 0 Entonces
+						matriz2[fila, columna] <- Concatenar("[  ",Concatenar(ConvertirATexto(q),"  ]"));
+						q <- q + 1;
+					SiNo
+						i <- i + 1;
+						multi <- Concatenar("[", ConvertirATexto(i));
+						matriz2[fila,columna] <- Concatenar(multi, multi2);
+					FinSi
+				FinSi
+			FinSi
+		FinPara
+	FinPara
+	
+	i <- 0;
+	j <- 0;
+	Para fila <- 0 Hasta 9 Con Paso 1 Hacer
+		j <- j + 1;
+		i <- 0;
+		Para columna <- 0 Hasta 9 Con Paso 1 Hacer
+			i <- i + 1;
+			matriz1[fila,columna] <- i*j;
+		FinPara
+	FinPara
+FinSubProceso
+SubProceso ImprimirTabla(matriz2)
+	Definir fila, columna Como Entero;
+	Para fila <- 0 Hasta 10 Con Paso 1 Hacer
+		Para columna <- 0 Hasta 10 Con Paso 1 Hacer
+			Escribir matriz2[fila,columna] , " " Sin Saltar;
+		FinPara
+		Escribir " ";
+	FinPara
+FinSubProceso
+SubProceso Resultado(matriz1, fila, columna)
+	Escribir matriz1[fila,columna];
+FinSubProceso
+Proceso arreglo5
+	
+	Definir fila, columna, i, j, matriz1, opcion, p, q Como Entero;
+	Definir control Como Logico;
+	Definir contenido, matriz2, multi, multi2, entrada Como Caracter;
+	Dimension matriz1[11,11], matriz2[11,11];
+	control <- Verdadero;
+	
+	LlenarTabla(matriz2,matriz1);
+	ImprimirTabla(matriz2);
+	
+	Mientras control = Verdadero Hacer
+		Escribir "Elija la opcion deseada";
+		Escribir "1 . Conocer resultado";
+		Escribir "0. Salir del sistema";
+		Leer opcion;
+		
+		Segun opcion Hacer
+			1:
+				Escribir "Ingrese el numero de la fila y columna de la cual desea ver el resultado";
+				Escribir "Ejemplo: Fila: 2, Columna: 4";
+				Escribir "Fila: ";
+				Leer fila;
+				Escribir "Columna: ";
+				Leer columna;
+				Resultado(matriz1, fila, columna);
+			0:
+				Escribir "Hasta luego";
+				control <- Falso;
+			De Otro Modo:
+				Escribir "La opción elegida no existe";
+		FinSegun
+	FinMientras
+	
+FinProceso
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+			</ol>
+		</article>
+	</section>
+    <script src="js/prism.js"></script>
+    <script src="js/efecto.js"></script>
+	<script src="js/menu.js"></script>
+  </body>
+</html>

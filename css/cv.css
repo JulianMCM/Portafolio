@@ -1,0 +1,180 @@
+body{
+    width: 1024px;
+    margin: 0px auto;
+    text-align: left;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    text-align: center;
+}
+img{
+    border: 10px solid #000000;
+    box-shadow: 20px 20px 10px black;
+}
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+}
+nav ul button {
+    float: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+nav ul button a {
+    display: block;
+    padding: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+nav ul button:hover {
+    background: #000000;
+}
+nav ul button a:hover{
+    color: #FFFFFF;
+}
+nav ul button a:active{
+    color: rgb(19, 36, 2);
+}
+nav ul button:active {
+    background: #21b1c4;
+}
+h1 {
+    font: bold 30px verdana, sans-serif;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+h2 {
+    font: bold 20px verdana, sans-serif;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+article {
+    padding: 20px;
+    margin-bottom: 15px
+}
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+button a {
+    display: block;
+    padding: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+button:hover {
+    background: #000000;
+}
+button a:hover{
+    color: #FFFFFF;
+}
+button a:active{
+    color: rgb(19, 36, 2);
+}
+button:active {
+    background: #21b1c4;
+}
+select {
+    position: absolute; right: 0;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 0.25rem;
+}
+#menu {
+    padding: 5px 15px;
+    justify-content: center;
+}
+#agrupar {
+    width: 960px;
+    margin: 15px auto;
+    text-align: center;
+}
+#cabecera {
+    padding: 25px;
+    text-align: center;
+}
+#descarga {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 5px;
+    color: #000000;
+}
+#descarga li a{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+#informacion {
+    text-align: center;
+}
+#pie {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 6px solid #FFFFFF;
+}
+.zoom {
+    transition: transform .2s; 
+}
+.zoom:hover {
+    transform: scale(1.5); 
+}
+
+:root.light {
+  --bg-color: #fff;
+  --text-color: rgb(0, 0, 0);
+}
+:root.dark {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+}
+:root.blue {
+  --bg-color: #05396B;
+  --text-color: #d5d2e0;
+}
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+.accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}

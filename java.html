@@ -1,0 +1,3646 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="Portafolio" content="Recopilacion de todos los talleres">   
+    <title>Talleres PSeInt</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link href="css/prism.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="js/jquery.js"></script>
+    <script src="js/menu.js"></script>
+  </head>
+  <body>
+    <div class="header"></div>
+        <ul id="navigation">
+            <li class="inicio"><a href="index.html"><span>Inicio</span></a></li>
+            <li class="pseint"><a href="pseint.html"><span>Talleres PSeInt</span></a></li>
+            <li class="java"><a href="java.html"><span>Talleres Java</span></a></li>
+            <li class="cv"><a href="Informacion.html"><span>Hoja de vida</span></a></li>
+        </ul>
+        <section>
+            <article>
+                <h1>Taller de Java</h1>
+                <ol>
+                    <li>Realizar el taller #1 de PSeInt en Java</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por los puntos 1, 2 y 3
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    /**
+     * Persona
+     */
+    public class persona {
+    
+        private String nombre, apellido, nombrePadre, apellidoPadre, nombreMadre, apellidoMadre;
+        private int edad;
+        private double estatura;
+    
+        public persona(String nombre, String apellido, String nombrePadre, String apellidoPadre, String nombreMadre,
+                String apellidoMadre, int edad, double estatura) {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.nombrePadre = nombrePadre;
+            this.apellidoPadre = apellidoPadre;
+            this.nombreMadre = nombreMadre;
+            this.apellidoMadre = apellidoMadre;
+            this.edad = edad;
+            this.estatura = estatura;
+        }
+    
+        public String getNombre() {
+            return nombre;
+        }
+    
+        public void setNombre(String nombre) {
+            this.nombre = nombre;
+        }
+    
+        public String getApellido() {
+            return apellido;
+        }
+    
+        public void setApellido(String apellido) {
+            this.apellido = apellido;
+        }
+    
+        public String getNombrePadre() {
+            return nombrePadre;
+        }
+    
+        public void setNombrePadre(String nombrePadre) {
+            this.nombrePadre = nombrePadre;
+        }
+    
+        public String getApellidoPadre() {
+            return apellidoPadre;
+        }
+    
+        public void setApellidoPadre(String apellidoPadre) {
+            this.apellidoPadre = apellidoPadre;
+        }
+    
+        public String getNombreMadre() {
+            return nombreMadre;
+        }
+    
+        public void setNombreMadre(String nombreMadre) {
+            this.nombreMadre = nombreMadre;
+        }
+    
+        public String getApellidoMadre() {
+            return apellidoMadre;
+        }
+    
+        public void setApellidoMadre(String apellidoMadre) {
+            this.apellidoMadre = apellidoMadre;
+        }
+    
+        public int getEdad() {
+            return edad;
+        }
+    
+        public void setEdad(int edad) {
+            this.edad = edad;
+        }
+    
+        public double getEstatura() {
+            return estatura;
+        }
+    
+        public void setEstatura(double estatura) {
+            this.estatura = estatura;
+        }
+    
+    
+    
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#1 punto 1
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    import clases.persona;
+    
+    public class punto1 {
+    
+        private static String nombre, apellido;
+    
+        public static void main(String[] args){
+            try (Scanner input = new Scanner(System.in)) {
+                System.out.println("Digite su nombre");
+                nombre = input.nextLine();
+                System.out.println("Digite su apellido");
+                apellido = input.nextLine();
+            }
+            persona persona1 = new persona (nombre, apellido, "", "", "", "", 0, 0);
+            
+            System.out.println("Hola " + persona1.getNombre() +" "+ persona1.getApellido());
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#1 punto 2
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    import clases.persona;
+    
+    public class punto2 {
+    
+        private static String nombre, apellido;
+        private static int edad;
+        private static double estatura;
+    
+        public static void main(String[] args) {
+            try (Scanner input = new Scanner(System.in)) {
+                System.out.println("Digite su nombre");
+                nombre = input.nextLine();
+                System.out.println("Digite su apellido");
+                apellido = input.nextLine();
+                System.out.println("Digite su edad");
+                edad = input.nextInt();
+                System.out.println("Digite su estatura");
+                estatura = input.nextDouble();
+            }
+            persona persona1 = new persona(nombre, apellido, "", "", "", "", edad, estatura);
+    
+            System.out.println("Hola " + persona1.getNombre() + " " + persona1.getApellido() + " tu estatura es " + persona1.getEstatura() + " y tu edad es " + persona1.getEdad());
+        }
+        
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#1 punto 3
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+    import clases.persona;
+    
+    /**
+     * punto3
+     */
+    public class punto3 {
+        private static String nombre, apellido, nombrePadre, apellidoPadre, nombreMadre, apellidoMadre;
+    
+        public static void main(String[] args) {
+            try (Scanner input = new Scanner(System.in)) {
+                System.out.println("Digite su nombre");
+                nombre = input.nextLine();
+                System.out.println("Digite su apellido");
+                apellido = input.nextLine();
+                System.out.println("Digite el nombre de su Padre");
+                nombrePadre = input.nextLine();
+                System.out.println("Digite el apellido de su Padre");
+                apellidoPadre = input.nextLine();
+                System.out.println("Digite el nombre de su Madre");
+                nombreMadre = input.nextLine();
+                System.out.println("Digite el apellido de su Madre");
+                apellidoMadre = input.nextLine();
+            }
+            persona persona1 = new persona(nombre, apellido, nombrePadre, apellidoPadre, nombreMadre, apellidoMadre, 0, 0);
+            System.out.println("Yo " + persona1.getNombre() + " " + persona1.getApellido() + ", soy hijo de " + persona1.getNombreMadre() + " " + persona1.getApellidoMadre() + " y " + persona1.getNombrePadre() + " " + persona1.getApellidoPadre());
+        } 
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 4
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class ciudad {
+        
+        private String ciudadCapital, pais;
+    
+        public ciudad(String ciudadCapital, String pais) {
+            this.ciudadCapital = ciudadCapital;
+            this.pais = pais;
+        }
+    
+        public String getCiudadCapital() {
+            return ciudadCapital;
+        }
+    
+        public void setCiudadCapital(String ciudadCapital) {
+            this.ciudadCapital = ciudadCapital;
+        }
+    
+        public String getPais() {
+            return pais;
+        }
+    
+        public void setPais(String pais) {
+            this.pais = pais;
+        }
+    
+        
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#1 punto 4
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import clases.ciudad;
+    import java.util.Scanner;
+    public class punto4 {
+        private static String ciudadCapital, pais;
+    
+        public static void main(String[] args) {
+            try (Scanner input = new Scanner(System.in)) {
+                System.out.println("Ingrese el nombre de una ciudad capital");
+                ciudadCapital = input.nextLine();
+                System.out.println("Ingrese el pais de dicha ciudad");
+                pais = input.nextLine();
+            }
+            ciudad ciudad1 = new ciudad(ciudadCapital, pais);
+            System.out.println("La ciuada de " + ciudad1.getCiudadCapital() + ", es la capital del pais " + ciudad1.getPais());
+        }
+        
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 5
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class mascota {
+        private String nombreMascota, nombreDueno, tipoMascota;
+        private int edadMascota;
+        public mascota(String nombreMascota, String nombreDueno, String tipoMascota, int edadMascota) {
+            this.nombreMascota = nombreMascota;
+            this.nombreDueno = nombreDueno;
+            this.tipoMascota = tipoMascota;
+            this.edadMascota = edadMascota;
+        }
+        public String getNombreMascota() {
+            return nombreMascota;
+        }
+        public void setNombreMascota(String nombreMascota) {
+            this.nombreMascota = nombreMascota;
+        }
+        public String getNombreDueno() {
+            return nombreDueno;
+        }
+        public void setNombreDueno(String nombreDueno) {
+            this.nombreDueno = nombreDueno;
+        }
+        public String getTipoMascota() {
+            return tipoMascota;
+        }
+        public void setTipoMascota(String tipoMascota) {
+            this.tipoMascota = tipoMascota;
+        }
+        public int getEdadMascota() {
+            return edadMascota;
+        }
+        public void setEdadMascota(int edadMascota) {
+            this.edadMascota = edadMascota;
+        } 
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#1 punto 5
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+    import clases.mascota;
+    
+    public class punto5 {
+        private static String nombreMascota, nombreDueno, tipoMascota;
+        private static int edadMascota;
+    
+        public static void main(String[] args) {
+                try (Scanner input = new Scanner(System.in)) {
+                    System.out.println("Por favor ingrese el nombre de su mascota");
+                    nombreMascota = input.nextLine();
+                    System.out.println("Por favor ingrese la edad de su mascota");
+                    edadMascota = input.nextInt();
+                    System.out.println("Por favor ingrese el tipo de mascota");
+                    tipoMascota = input.next();
+                    System.out.println("Por favor ingrese su nombre completo");
+                    nombreDueno = input.next();
+                }
+                mascota mascota1 = new mascota(nombreMascota, nombreDueno, tipoMascota, edadMascota);
+                System.out.println(mascota1.getNombreMascota() + " es un(a) " + mascota1.getTipoMascota() + ", el cual, tiene " + mascota1.getEdadMascota() + " años de edad, y " + mascota1.getNombreDueno() + " es actualmente su dueño(a)");
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Realizar el taller #2 de PSeInt en Java</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por los puntos 1, 2 y 3
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+package clases;
+/**
+ * persona
+ */
+public class persona {
+    private String nombre, apellido;
+    private int edad;
+    
+    public persona(String nombre, String apellido, int edad) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getApellido() {
+        return apellido;
+    }
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+    public int getEdad() {
+        return edad;
+    }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    } 
+}
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#2 punto 1
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+    import clases.persona;
+    
+    public class punto1 {
+    
+        static void confirmarEdad(int edad){
+            if(edad >= 18){
+                System.out.println("Usted es mayor de edad");
+                return;
+            }
+        }
+        
+        private static int edad;
+    
+        public static void main(String[] args) {
+            try (Scanner input = new Scanner(System.in)) {
+                System.out.println("Por favor digite su edad");
+                edad = input.nextInt();
+            }
+            persona persona1 = new persona("", "", edad);
+            confirmarEdad(persona1.getEdad());
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#2 punto 2
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+    import clases.persona;
+    
+    public class punto2 {
+    
+        static void confirmarEdad(int edad){
+            if(edad < 18){
+                System.out.println("Usted es una niño(a)");
+                return;
+            }
+        }
+        
+        private static int edad;
+    
+        public static void main(String[] args) {
+            try (Scanner input = new Scanner(System.in)) {
+                System.out.println("Por favor ingrese su edad");
+                edad = input.nextInt();
+            }
+            persona persona1 = new persona("", "", edad);
+            confirmarEdad(persona1.getEdad());
+    
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#2 punto 3
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+    import clases.persona;
+    /**
+     * punto1
+     */
+    
+    public class punto3 {
+    
+        static void confirmarEdad(int edad, String nombre, String apellido){
+        
+            if (edad >= 18){
+                System.out.println(nombre + " " + apellido + " usted es mayor de edad, por lo tanto puede entrar a la fiesta");
+                return;
+            } else {
+                System.out.println(nombre + " " + apellido + " usted es menor de edad, por lo tanto no puede entrar a la fiesta, por favor devuelvase a su casa");
+                return;
+            }
+        }
+        
+        private static String nombre, apellidos;
+        private static int edad;
+    
+        public static void main(String[] args) {
+            try (Scanner input = new Scanner(System.in)) {
+                System.out.println("Por favor ingrese su nombre");
+                nombre = input.nextLine();
+                System.out.println("Por favor ingrese su apellido");
+                apellidos = input.nextLine();
+                System.out.println("Por favor ingrese su edad");
+                edad = input.nextInt();
+            }
+            persona persona1 = new persona(nombre, apellidos, edad);
+            confirmarEdad(persona1.getEdad(), persona1.getNombre(), persona1.getApellido());
+        }
+    
+        
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 4
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class pelicula {
+        private String nombrePelicula, estadoPelicula;
+        private boolean disponible;
+    
+        public pelicula(String nombrePelicula, String estadoPelicula, boolean disponible) {
+            this.nombrePelicula = nombrePelicula;
+            this.estadoPelicula = estadoPelicula;
+            this.disponible = disponible;
+        }
+    
+        public String getNombrePelicula() {
+            return nombrePelicula;
+        }
+    
+        public void setNombrePelicula(String nombrePelicula) {
+            this.nombrePelicula = nombrePelicula;
+        }
+    
+        public String getEstadoPelicula() {
+            return estadoPelicula;
+        }
+    
+        public void setEstadoPelicula(String estadoPelicula) {
+            this.estadoPelicula = estadoPelicula;
+        }
+    
+        public boolean isDisponible() {
+            return disponible;
+        }
+    
+        public void setDisponible(boolean disponible) {
+            this.disponible = disponible;
+        }
+          
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#2 punto 4
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.ArrayList;
+    import java.util.List;
+    import java.util.Scanner;
+    import clases.pelicula;
+    
+    public class punto4 {
+    
+        static void alquilarPelicula(String nombrePelicula, boolean disponible, int opcionPelicula){
+    
+            if (opcionPelicula == 1 & disponible == true) {
+                System.out.println("Ha adquirido la pelicula " + nombrePelicula);
+                pelicula1.setDisponible(false);
+                return;
+            } else {
+                if (opcionPelicula == 2 & disponible == true) {
+                    System.out.println("Ha adquirido la pelicula " + nombrePelicula);
+                    pelicula2.setDisponible(false);
+                    return;
+                } else {
+                    if (opcionPelicula == 3 & disponible == true) {
+                        System.out.println("Ha adquirido la pelicula " + nombrePelicula);
+                        pelicula3.setDisponible(false);
+                        return;
+                    } else {
+                        if (opcionPelicula == 4 & disponible == true) {
+                            System.out.println("Ha adquirido la pelicula " + nombrePelicula);
+                            pelicula4.setDisponible(false);
+                            return;
+                        } else {
+                            System.out.println("La pelicula " + nombrePelicula + " no esta disponible");
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+    
+        static void consultarPelicula(){
+    
+            List<String> lista = new ArrayList<>();
+            
+            if (pelicula1.isDisponible() == true) {
+                lista.add(pelicula1.getNombrePelicula());
+            }
+            if (pelicula2.isDisponible() == true) {
+                lista.add(pelicula2.getNombrePelicula());
+            }
+            if (pelicula3.isDisponible() == true) {
+                lista.add(pelicula3.getNombrePelicula());
+            }
+            if (pelicula4.isDisponible() == true) {
+                lista.add(pelicula4.getNombrePelicula());
+            }
+    
+            System.out.println("Esta es una lista de las peliculas disponibles actualmente: \n"
+            + lista);
+            return;
+        }
+    
+        static void recibirPelicula(String nombrePelicula, String estadoPelicula){
+            if (nombrePelicula.equals(pelicula1.getNombrePelicula())) {
+                pelicula1.setDisponible(true);
+                pelicula1.setEstadoPelicula(estadoPelicula);
+                System.out.println("Usted a ingresado la siguiente informacion\n" +
+                "La pelicula " + pelicula1.getNombrePelicula() + " presenta la siguiente informacion\n" +
+                estadoPelicula);
+                return;
+            } else {
+                if (nombrePelicula.equals(pelicula2.getNombrePelicula())) {
+                    pelicula2.setDisponible(true);
+                    pelicula2.setEstadoPelicula(estadoPelicula);
+                    System.out.println("Usted a ingresado la siguiente informacion\n" +
+                    "La pelicula " + pelicula2.getNombrePelicula() + " presenta la siguiente informacion\n" +
+                    estadoPelicula);
+                    return;
+                } else {
+                    if (nombrePelicula.equals(pelicula3.getNombrePelicula())) {
+                        pelicula3.setDisponible(true);
+                        pelicula3.setEstadoPelicula(estadoPelicula);
+                        System.out.println("Usted a ingresado la siguiente informacion\n" +
+                        "La pelicula " + pelicula3.getNombrePelicula() + " presenta la siguiente informacion\n" +
+                        estadoPelicula);
+                        return;
+                    } else {
+                        if (nombrePelicula.equals(pelicula4.getNombrePelicula())) {
+                            pelicula4.setDisponible(true);
+                            pelicula4.setEstadoPelicula(estadoPelicula);
+                            System.out.println("Usted a ingresado la siguiente informacion\n" +
+                            "La pelicula " + pelicula4.getNombrePelicula() + " presenta la siguiente informacion\n" +
+                            estadoPelicula);
+                            return;
+                        } else {
+                            System.out.println("La pelicula ingresada no es valida");
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+    
+        private static String nombrePelicula, estadoPelicula;
+        private static int opcion, opcionPelicula;
+        private static boolean control = true;
+    
+        static pelicula pelicula1 = new pelicula("Volver al futuro", "Bien", true);
+        static pelicula pelicula2 = new pelicula("Blade Runner 2049", "Bien", true);
+        static pelicula pelicula3 = new pelicula("Ghost in the Shell", "Bien", true);
+        static pelicula pelicula4 = new pelicula("Akira", "Bien", true);
+    
+        public static void main(String[] args) {
+            try (Scanner input = new Scanner(System.in)) {
+                while (control == true) {
+                    System.out.println("Elija la opcion deseada\n" + "1. Alquilar pelicula\n" +
+                    "2. Consultar peliculas disponibles\n" + "3. Recibir pelicula\n" +
+                    "0. Salir");
+    
+                    opcion = input.nextInt();
+    
+                    switch (opcion) {
+                        case 1:
+                            System.out.println("Elija la pelicula deseada\n" + "1. Volver al futuro\n"
+                            + "2. Blade Runner 2049\n" + "3. Ghost in the Shell\n" + "4. Akira\n");
+    
+                            opcionPelicula = input.nextInt();
+    
+                            switch (opcionPelicula) {
+                                case 1:
+                                    alquilarPelicula(pelicula1.getNombrePelicula(), pelicula1.isDisponible(), opcionPelicula);
+                                    break;
+                                case 2:
+                                    alquilarPelicula(pelicula2.getNombrePelicula(), pelicula2.isDisponible(), opcionPelicula);
+                                    break;
+                                case 3:
+                                    alquilarPelicula(pelicula3.getNombrePelicula(), pelicula3.isDisponible(), opcionPelicula);
+                                    break;
+                                case 4:
+                                alquilarPelicula(pelicula4.getNombrePelicula(), pelicula4.isDisponible(), opcionPelicula);
+                                    break;
+                                default:
+                                    System.out.println("La pelicula elejida no existe");
+                                    break;
+                            }
+                            break;
+                        case 2:
+                            consultarPelicula();
+                            break;
+                        case 3:
+                            System.out.println("Ingrese el nombre de la pelicula a regresar");
+                            nombrePelicula = input.next();
+    
+                            System.out.println("¿La pelicula presenta algun daño o noverdad? Por favor ingresa la informacion pertinente");
+                            estadoPelicula = input.next();
+    
+                            recibirPelicula(nombrePelicula, estadoPelicula);
+                            break;
+                        case 0:
+                            control = false;
+                            break;
+                        default:
+                            System.out.println("La opcion elegida no existe");
+                            break;
+                    }
+                }
+            }
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 5
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class producto {
+        private String caracteProducto, producto;
+        private double precio;
+        private int stock;
+        
+        public producto(String caracteProducto, String producto, double precio, int stock) {
+            this.caracteProducto = caracteProducto;
+            this.producto = producto;
+            this.precio = precio;
+            this.stock = stock;
+        }
+    
+        public String getCaracteProducto() {
+            return caracteProducto;
+        }
+    
+        public void setCaracteProducto(String caracteProducto) {
+            this.caracteProducto = caracteProducto;
+        }
+    
+        public String getProducto() {
+            return producto;
+        }
+    
+        public void setProducto(String producto) {
+            this.producto = producto;
+        }
+    
+        public double getPrecio() {
+            return precio;
+        }
+    
+        public void setPrecio(double precio) {
+            this.precio = precio;
+        }
+    
+        public int getStock() {
+            return stock;
+        }
+    
+        public void setStock(int stock) {
+            this.stock = stock;
+        } 
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#2 punto 5
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+    import clases.producto;
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.List;
+    
+    public class punto5 {
+    
+        static double comprarProducto(int listaProductos, int carrito, double total, List<String> lista1){
+            int i;
+            if (listaProductos == 1 & producto1.getStock() >= 1) {
+                System.out.println("Se a añadido " + producto1.getProducto() + "a la lista de compra");
+                i = producto1.getStock();
+                producto1.setStock(i-1);
+                carrito = carrito + 1;
+                total = total + producto1.getPrecio();
+                lista1.add(producto1.getProducto().concat(" precio " + String.valueOf(producto1.getPrecio())).concat(" total: " + total));
+                System.out.println("Esta es la lista de compra: \n"
+                + lista1);
+                lista1.removeAll(lista1);
+                return total;
+            } else {
+                if (listaProductos == 2 & producto2.getStock() >= 1) {
+                    System.out.println("Se a añadido " + producto2.getProducto() + "a la lista de compra");
+                    i = producto2.getStock();
+                    producto2.setStock(i-1);
+                    carrito = carrito + 1;
+                    total = total + producto2.getPrecio();
+                    lista1.add(producto2.getProducto().concat(" precio " + String.valueOf(producto2.getPrecio())).concat(" total: " + total));
+                    System.out.println("Esta es la lista de compra: \n"
+                    + lista1);
+                    lista1.removeAll(lista1);
+                    return total;
+                } else {
+                    if (listaProductos == 3 & producto3.getStock() >= 1) {
+                        System.out.println("Se a añadido " + producto3.getProducto() + "a la lista de compra");
+                        i = producto3.getStock();
+                        producto3.setStock(i-1);
+                        carrito = carrito + 1;
+                        total = total + producto3.getPrecio();
+                        lista1.add(producto3.getProducto().concat(" precio " + String.valueOf(producto3.getPrecio())).concat(" total: " + total));
+                        System.out.println("Esta es la lista de compra: \n"
+                        + lista1);
+                        lista1.removeAll(lista1);
+                        return total;
+                    } else {
+                        System.out.println("No hay existencias de ningun producto");
+                        return total;
+                    }
+                }
+            }
+        }
+    
+        static void consultarProct(){
+            List<String> lista = new ArrayList<>();
+            double [] precios = {producto1.getPrecio(), producto2.getPrecio(), producto3.getPrecio()};
+            //double aux;
+            boolean verificacion = true;
+            
+            Arrays.sort(precios);
+            int i = 0;
+            while (verificacion == true) {
+                
+                if (producto1.getStock() >=1 & producto1.getPrecio() == precios[i]) {
+                    lista.add(String.valueOf(producto1.getPrecio()));
+                    lista.add(producto1.getProducto());
+                    i ++;
+                } else {
+                    if (producto2.getStock() >= 1 & producto2.getPrecio() == precios[i]) {
+                        lista.add(String.valueOf(producto2.getPrecio()));
+                        lista.add(producto2.getProducto());
+                        i ++;
+                    } else {
+                        if (producto3.getStock() >= 1 & producto3.getPrecio() == precios[i]) {
+                            lista.add(String.valueOf(producto3.getPrecio()));
+                            lista.add(producto3.getProducto());
+                            i ++;
+                        }
+                    }
+                }
+                if (i >= 3) {
+                    verificacion = false;
+                }
+            }
+            System.out.println("Esta es una lista de los productos ordenados por precio: \n"
+            + lista);
+            return;
+        }
+    
+        static double recibirProducto(String producto, int carrito, double total, List<String> lista1){
+            if (producto.equals(producto1.getProducto())) {
+                lista1.removeAll(lista1);
+                producto1.setStock(1);
+                total = total - producto1.getPrecio();
+                System.out.println("Se a regresado el producto " + producto1.getProducto());
+                return total;
+            } else {
+                if (producto.equals(producto2.getProducto())) {
+                    lista1.removeAll(lista1);
+                    producto2.setStock(1);
+                    total = total - producto2.getPrecio();
+                    System.out.println("Se a regresado el producto " + producto2.getProducto());
+                    return total;
+                } else {
+                    if (producto.equals(producto3.getProducto())) {
+                        lista1.removeAll(lista1);
+                        producto3.setStock(1);
+                        total = total - producto3.getPrecio();
+                        System.out.println("Se a regresado el producto " + producto3.getProducto());
+                        return total;
+                    } else {
+                        System.out.println("El producto ingresado no es valido");
+                        return total;
+                    }
+                }
+            }
+        }
+        
+        private static String producto;
+        private static int listaProductos, opcion, carrito = 0;
+        private static boolean control = true, compra = true;
+        private static double total = 0;
+    
+        static List<String> lista1 = new ArrayList<>();
+    
+        static producto producto1 = new producto("Alivian, reducen el dolor", "Analgesicos", 5999.99, 2);
+        static producto producto2 = new producto("Vendar heridas", "Vendas", 3560.80, 1);
+        static producto producto3 = new producto("Equipamento basico", "Botiquin", 10999.89, 3);
+    
+        public static void main(String[] args) {
+            try (Scanner input = new Scanner(System.in)) {
+                while (control == true) {
+                    System.out.println("Elija la opcion deseada\n" + "1. Comprar productos\n" +
+                    "2. Consultar productos por precio\n" + "3. Devolver producto\n" +
+                    "0. Salir");
+    
+                    compra = true;
+                    opcion = input.nextInt();
+    
+                    switch (opcion) {
+                        case 1:
+                        while (compra == true) {
+    
+                            System.out.println("Seleccione los productos que desea comprar\n" + "1. " + producto1.getProducto() + "\n"
+                            + "2. " + producto2.getProducto() + "\n" + "3. " + producto3.getProducto() + "\n" + "4. Dejar de comprar\n");
+    
+                            listaProductos = input.nextInt();
+    
+                            switch (listaProductos) {
+                                case 1:
+                                    if (producto1.getStock() <= 0) {
+                                        System.out.println("Ya no quedan existencias de este producto");
+                                    } else {
+                                        total = comprarProducto(listaProductos, carrito, total, lista1);
+                                        carrito = carrito + 1;
+                                    }
+                                    break;
+    
+                                case 2:
+                                    if (producto2.getStock() <= 0) {
+                                        System.out.println("Ya no quedan existencias de este producto");
+                                    } else {
+                                        total =  comprarProducto(listaProductos, carrito, total, lista1);
+                                        carrito = carrito + 1;
+                                    }
+                                    break;
+    
+                                case 3:
+                                    if (producto3.getStock() <= 0) {
+                                        System.out.println("Ya no quedan existencias de este producto");
+                                    } else {
+                                        total =  comprarProducto(listaProductos, carrito, total, lista1);
+                                        carrito = carrito + 1;
+                                    }
+                                    break;
+    
+                                case 4:
+                                    System.out.println("Dejando de comprar...");
+                                    compra = false;
+                                    break;
+    
+                                default:
+                                break;
+                            }
+                        }
+                            break;
+    
+                        case 2:
+                            consultarProct();
+                            break;
+    
+                        case 3:
+                            if (carrito == 0) {
+                                System.out.println("No hay articulos que regresar");
+                            } else {
+                                System.out.println("Ingrese el nombre del producto que desea regresar");
+                                producto = input.next();
+                                total = recibirProducto(producto, carrito, total, lista1);
+                            }
+                            break;
+    
+                        case 0:
+                            control = false;
+                            break;
+                    
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 6
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class motocicleta {
+        private String placa, modelo, arreglos, ingreso, salida, observaciones, novedades;
+    
+        public motocicleta(String placa, String modelo, String arreglos, String ingreso, String salida,
+                String observaciones, String novedades) {
+            this.placa = placa;
+            this.modelo = modelo;
+            this.arreglos = arreglos;
+            this.ingreso = ingreso;
+            this.salida = salida;
+            this.observaciones = observaciones;
+            this.novedades = novedades;
+        }
+    
+        public String getPlaca() {
+            return placa;
+        }
+    
+        public void setPlaca(String placa) {
+            this.placa = placa;
+        }
+    
+        public String getModelo() {
+            return modelo;
+        }
+    
+        public void setModelo(String modelo) {
+            this.modelo = modelo;
+        }
+    
+        public String getArreglos() {
+            return arreglos;
+        }
+    
+        public void setArreglos(String arreglos) {
+            this.arreglos = arreglos;
+        }
+    
+        public String getIngreso() {
+            return ingreso;
+        }
+    
+        public void setIngreso(String ingreso) {
+            this.ingreso = ingreso;
+        }
+    
+        public String getSalida() {
+            return salida;
+        }
+    
+        public void setSalida(String salida) {
+            this.salida = salida;
+        }
+    
+        public String getObservaciones() {
+            return observaciones;
+        }
+    
+        public void setObservaciones(String observaciones) {
+            this.observaciones = observaciones;
+        }
+    
+        public String getNovedades() {
+            return novedades;
+        }
+    
+        public void setNovedades(String novedades) {
+            this.novedades = novedades;
+        }
+        
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#2 punto 6
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+    import java.text.DateFormat;
+    import java.text.SimpleDateFormat;
+    import java.time.Instant;
+    import java.util.Date;
+    import clases.motocicleta;
+    
+    public class punto6 {
+    
+        static motocicleta ingresarMoto(String placa, String modelo, String observaciones){
+            DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+            Date date = Date.from(Instant.now());      
+            String dateToStr = dateFormat.format(date);
+            motocicleta moto = new motocicleta(placa, modelo, "", dateToStr, "", observaciones, "");
+            System.out.println("La informacion ingresada es la siguiente: \n" + "La motocicleta con placas: " + 
+            moto.getPlaca() +"\n" + "De tipo: " + moto.getModelo() + "\n" + "Fue ingresada el dia: " + 
+            moto.getIngreso() + "\n" + "Con las siguientes observaciones: " + moto.getObservaciones() + "\n");
+            return moto;
+        }
+    
+        static motocicleta salidaMoto(String placa, motocicleta moto){
+            int validacion;
+            String arreglos, novedades;
+             
+                System.out.println("¿Se ha realizado algun arreglo que involucre el cambio de piezas?\n" + 
+                "1. Si" + " " + "2. No");
+                validacion = input.nextInt();
+    
+                if (validacion == 1) {
+                    System.out.println("Ingrese los repuestos utilizados");
+                    arreglos = input.next();
+                    moto.setArreglos(arreglos);
+                    System.out.println("Ingrese las novedades realizadas a la motocicleta");
+                    novedades = input.next();
+                    moto.setNovedades(novedades);
+    
+                    DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                    Date date = Date.from(Instant.now());      
+                    String dateToStr = dateFormat.format(date);
+                    moto.setSalida(dateToStr);
+                    System.out.println("La informacion ingresada es la siguiente: \n" + "La motocicleta con placas: " + 
+                    moto.getPlaca() +"\n" + "De tipo: " + moto.getModelo() + "\n" + "Fue ingresada el dia: " + 
+                    moto.getIngreso() + "\n" + "Y retirada el dia: " + moto.getSalida() + "\n" + "Con las siguientes observaciones: " + 
+                    moto.getObservaciones() + "\n" +"Se le hicieron los siguientes arreglos: " + moto.getNovedades() + "\n" + 
+                    "Utilizando los siguientes recambios: " + moto.getArreglos() + "\n");
+                    return moto;
+                } else {
+                    System.out.println("Ingrese las novedades realizadas a la motocicleta");
+                    novedades = input.next();
+                    moto.setNovedades(novedades);
+    
+                    DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                    Date date = Date.from(Instant.now());      
+                    String dateToStr = dateFormat.format(date);
+                    moto.setSalida(dateToStr);
+                    System.out.println("La informacion ingresada es la siguiente: \n" + "La motocicleta con placas: " + 
+                    moto.getPlaca() +"\n" + "De tipo: " + moto.getModelo() + "\n" + "Fue ingresada el dia: " + 
+                    moto.getIngreso() + "\n" + "Y retirada el dia: " + moto.getSalida() + "\n" + "Con las siguientes observaciones: " + 
+                    moto.getObservaciones() + "\n" +"Se le hicieron los siguientes arreglos: " + moto.getNovedades() + "\n");
+                    return moto;
+                }
+            
+        }
+    
+        private static String placa, modelo, observaciones;
+        private static int opcion = 0;
+        private static boolean control = true;
+        private static motocicleta moto;
+        static Scanner input = new Scanner(System.in);
+    
+        public static void main(String[] args) {
+                while (control == true) {
+                    System.out.println("Bienvenido al taller de motos El Maquinista\n" + "Por favor elija la opcion deseada\n" +
+                    "1. Ingresar motocicleta\n" + "2. Salida motocicleta\n" +
+                    "0. Salir");
+    
+                    opcion = input.nextInt();
+    
+                    switch (opcion) {
+                        case 1:
+                            System.out.println("Por favor digite la placa de la motocicleta");
+                            placa = input.next();
+                            System.out.println("Por favor digite el modelo de la motocicleta");
+                            modelo = input.next();
+                            System.out.println("Por favor digite las obervaciones por parte del cliente dadas a la motocicleta");
+                            observaciones = input.next();
+                            moto = ingresarMoto(placa, modelo, observaciones);
+                            break;
+    
+                        case 2:
+                            System.out.println("Por favor digite la placa de la motocicleta a retirar");
+                            placa = input.next();
+                            moto = salidaMoto(placa, moto);
+                            break;
+    
+                        case 0:
+                            control = false;
+                            break;
+                    
+                        default:
+                            break;
+                    }
+                }
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 7
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class pasiente {
+        private double peso, estatura, imc;
+        private String nombre, apellido, cedula;
+        public pasiente(double peso, double estatura, double imc, String nombre, String apellido, String cedula) {
+            this.peso = peso;
+            this.estatura = estatura;
+            this.imc = imc;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.cedula = cedula;
+        }
+        public double getPeso() {
+            return peso;
+        }
+        public void setPeso(double peso) {
+            this.peso = peso;
+        }
+        public double getEstatura() {
+            return estatura;
+        }
+        public void setEstatura(double estatura) {
+            this.estatura = estatura;
+        }
+        public double getImc() {
+            return imc;
+        }
+        public void setImc(double imc) {
+            this.imc = imc;
+        }
+        public String getNombre() {
+            return nombre;
+        }
+        public void setNombre(String nombre) {
+            this.nombre = nombre;
+        }
+        public String getApellido() {
+            return apellido;
+        }
+        public void setApellido(String apellido) {
+            this.apellido = apellido;
+        }
+        public String getCedula() {
+            return cedula;
+        }
+        public void setCedula(String cedula) {
+            this.cedula = cedula;
+        }
+        
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#2 punto 7
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    import clases.pasiente;
+    
+    public class punto7 {
+    
+        static void calcularIMC(Double peso, Double estatura){
+            double imc;
+            System.out.println("Ahora se procedera a calcular el IMC del paciente...");
+            imc = pasiente1.getPeso()/(pasiente1.getEstatura()*pasiente1.getEstatura());
+            pasiente1.setImc(imc);
+    
+            System.out.println("El ciudadano " + pasiente1.getNombre() + " " + pasiente1.getApellido() + "\n" + 
+            " con cedula " + pasiente1.getCedula() + "\n" + " con peso " + pasiente1.getPeso() + "\n" + 
+            " y una esatura de " + pasiente1.getEstatura() + "\n");
+    
+            if (imc < 18.5) {
+                System.out.println("Tiene un indice de masa corporal de: " +  pasiente1.getImc() + " y actualmente tiene bajo peso");
+            } else {
+                if (imc >= 18.5 & imc <= 24.9) {
+                    System.out.println("Tiene un indice de masa corporal de: " +  pasiente1.getImc() + " y actualmente tiene un peso normal");
+                } else {
+                    if (imc >= 25 & imc <= 29.9) {
+                        System.out.println("Tiene un indice de masa corporal de: " +  pasiente1.getImc() + " y actualmente tiene sobrepeso");
+                    } else {
+                        if (imc > 30) {
+                            System.out.println("Tiene un indice de masa corporal de: " +  pasiente1.getImc() + " y actualmente tiene obesidad");
+                        }
+                    }
+                }
+            }
+        }
+    
+        private static double peso, estatura;
+        private static String nombre, apellido, cedula;
+        static Scanner input = new Scanner(System.in);
+        static pasiente pasiente1 = new pasiente(0, 0, 0, "", "", "");
+    
+        public static void main(String[] args) {
+    
+            System.out.println("Bienvenido al sistema :) \n" + "Por favor ingrese los datos del paciente \n"
+            + "Nombres: ");
+            nombre = input.next();
+            System.out.println("Apellidos: ");
+            apellido = input.next();
+            System.out.println("Cedula: ");
+            cedula = input.next();
+            System.out.println("Peso en kilogramos: ");
+            peso = input.nextDouble();
+            System.out.println("Estatura en metros: ");
+            estatura = input.nextDouble();
+            pasiente1.setNombre(nombre);
+            pasiente1.setApellido(apellido);
+            pasiente1.setEstatura(estatura);
+            pasiente1.setPeso(peso);
+            pasiente1.setCedula(cedula);
+    
+            calcularIMC(pasiente1.getPeso(), pasiente1.getEstatura());
+    
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 8
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class torta {
+        private String nombreTorta, sabor, decoracion;
+        private int porciones, nventas;
+        
+        public torta(String nombreTorta, String sabor, String decoracion, int porciones, int nventas) {
+            this.nombreTorta = nombreTorta;
+            this.sabor = sabor;
+            this.decoracion = decoracion;
+            this.porciones = porciones;
+            this.nventas = nventas;
+        }
+    
+        public String getNombreTorta() {
+            return nombreTorta;
+        }
+    
+        public void setNombreTorta(String nombreTorta) {
+            this.nombreTorta = nombreTorta;
+        }
+    
+        public String getSabor() {
+            return sabor;
+        }
+    
+        public void setSabor(String sabor) {
+            this.sabor = sabor;
+        }
+    
+        public String getDecoracion() {
+            return decoracion;
+        }
+    
+        public void setDecoracion(String decoracion) {
+            this.decoracion = decoracion;
+        }
+    
+        public int getPorciones() {
+            return porciones;
+        }
+    
+        public void setPorciones(int porciones) {
+            this.porciones = porciones;
+        }
+    
+        public int getNventas() {
+            return nventas;
+        }
+    
+        public void setNventas(int nventas) {
+            this.nventas = nventas;
+        } 
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#2 punto 8
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    import clases.torta;
+    
+    public class punto8 {
+    
+        static void registrarPedido(int opcionTorta){
+            
+            int i;
+    
+            if (opcionTorta == 1) {
+                System.out.println("Los detalles del pedido son los siguientes: \n" +
+                "Tipo de torta: " + torta1.getNombreTorta() + "\n" +
+                "Sabor: " + torta1.getSabor() + "\n" +
+                "Decoraciones: " + torta1.getDecoracion() + "\n" +
+                "Porciones: " + torta1.getPorciones() + "\n");
+                i = torta1.getNventas();
+                torta1.setNventas(i + 1);
+                return;
+            } else {
+                if (opcionTorta == 2) {
+                    System.out.println("Los detalles del pedido son los siguientes: \n" +
+                    "Tipo de torta: " + torta2.getNombreTorta() + "\n" +
+                    "Sabor: " + torta2.getSabor() + "\n" +
+                    "Decoraciones: " + torta2.getDecoracion() + "\n" +
+                    "Porciones: " + torta2.getPorciones() + "\n");
+                    i = torta2.getNventas();
+                    torta2.setNventas(i + 1);
+                    return;
+                } else {
+                    if (opcionTorta == 3) {
+                        System.out.println("Los detalles del pedido son los siguientes: \n" +
+                        "Tipo de torta: " + torta3.getNombreTorta() + "\n" +
+                        "Sabor: " + torta3.getSabor() + "\n" +
+                        "Decoraciones: " + torta3.getDecoracion() + "\n" +
+                        "Porciones: " + torta3.getPorciones() + "\n");
+                        i = torta3.getNventas();
+                        torta3.setNventas(i + 1);
+                        return;
+                    } else {
+                        System.out.println("La opcion elegina no esta dispobible en estos momentos");
+                        return;
+                    }
+                }
+            }
+        }
+    
+        static void tortasDisponibles(){
+    
+            System.out.println("Esta es una lista de las tortas disponibles: \n" +
+            torta1.getNombreTorta() + " sabor " + torta1.getSabor() + " con " + 
+            torta1.getDecoracion() + " de " + torta1.getPorciones() + " porciones.\n" +
+            torta2.getNombreTorta() + " sabor " + torta2.getSabor() + " con " + 
+            torta2.getDecoracion() + " de " + torta2.getPorciones() + " porciones.\n" +
+            torta3.getNombreTorta() + " sabor " + torta3.getSabor() + " con " + 
+            torta3.getDecoracion() + " de " + torta3.getPorciones() + " porciones.\n");
+            return;
+        }
+    
+        static int consultarVentas(int ventas){
+    
+            ventas = torta1.getNventas() + torta2.getNventas() + torta3.getNventas();
+            System.out.println("Ventas realizadas el dia de hoy: \n" +
+            "Se han vendido un total de " + ventas + " tortas el dia de hoy.\n" +
+            "Estas ventas incluyen " + torta1.getNventas() + " " + torta1.getNombreTorta() +
+            " vendidas\n" + torta2.getNventas() + " " + torta2.getNombreTorta() +
+            " vendidas\n" + torta3.getNventas() + " " + torta3.getNombreTorta() +
+            " vendidas\n");
+    
+            return ventas;
+        }
+        
+        private static boolean control = true;
+        private static int ventas = 0, opcionTorta, opcion;
+        static Scanner input = new Scanner(System.in);
+    
+        static torta torta1 = new torta("Torta de dos pisos", "Chocolate", "Coco rayado", 8, 0);
+        static torta torta2 = new torta("Torta fria", "Mora", "Pedacitos de chocolate", 4, 0);
+        static torta torta3 = new torta("Torta de tres pisos", "Naranja", "Crema de vainilla", 6, 0);
+        
+    
+        public static void main(String[] args) {
+            
+            while (control == true) {
+                System.out.println("Bienvenido a la pasteleria de Don Carlos\n" + "Por favor elija la opcion deseada\n" +
+                "1. Registrar pedido\n" + "2. Tortas disponibles\n" + "3. Numero de ventas realizadas\n" +
+                "0. Salir");
+    
+                opcion = input.nextInt();
+    
+                switch (opcion) {
+                    case 1:
+                        System.out.println("Por favor seleccione la torta deseada\n" +
+                        "1. " + torta1.getNombreTorta() + " sabor " + torta1.getSabor() + " con " + 
+                        torta1.getDecoracion() + " de " + torta1.getPorciones() + " porciones.\n" +
+                        "2. " + torta2.getNombreTorta() + " sabor " + torta2.getSabor() + " con " + 
+                        torta2.getDecoracion() + " de " + torta2.getPorciones() + " porciones.\n" +
+                        "3. " + torta3.getNombreTorta() + " sabor " + torta3.getSabor() + " con " + 
+                        torta3.getDecoracion() + " de " + torta3.getPorciones() + " porciones.\n");
+    
+                        opcionTorta = input.nextInt();
+    
+                        switch (opcionTorta) {
+                            case 1:
+                                registrarPedido(opcionTorta);
+                                break;
+    
+                            case 2:
+                                registrarPedido(opcionTorta);
+                                break;
+    
+                            case 3:
+                                registrarPedido(opcionTorta);
+                                break;
+                        
+                            default:
+                                break;
+                        }
+                        break;
+    
+                    case 2:
+                        tortasDisponibles();
+                        break;
+    
+                    case 3:
+                        consultarVentas(ventas);
+                        break;
+    
+                    case 0:
+                        control = false;
+                        break;
+                
+                    default:
+                        System.out.println("La opcion elegida no existe");
+                        break;
+                }
+            }
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 9
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class formas {
+        private double base, altura, base1, base2, area;
+    
+        public formas(double base, double altura, double base1, double base2, double area) {
+            this.base = base;
+            this.altura = altura;
+            this.base1 = base1;
+            this.base2 = base2;
+            this.area = area;
+        }
+    
+        public double getBase() {
+            return base;
+        }
+    
+        public void setBase(double base) {
+            this.base = base;
+        }
+    
+        public double getAltura() {
+            return altura;
+        }
+    
+        public void setAltura(double altura) {
+            this.altura = altura;
+        }
+    
+        public double getBase1() {
+            return base1;
+        }
+    
+        public void setBase1(double base1) {
+            this.base1 = base1;
+        }
+    
+        public double getBase2() {
+            return base2;
+        }
+    
+        public void setBase2(double base2) {
+            this.base2 = base2;
+        }
+    
+        public double getArea() {
+            return area;
+        }
+    
+        public void setArea(double area) {
+            this.area = area;
+        }  
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#2 punto 9
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    import clases.formas;
+    
+    public class punto9 {
+    
+        static void areaRectangulo(){
+            double area;
+            area = forma1.getBase()*forma1.getAltura();
+            System.out.println("El area del rectangulo es: " + area);
+            return;
+        }
+    
+        static void areaTriangulo(){
+            double area;
+            area = forma1.getBase()*forma1.getAltura()/2;
+            System.out.println("El area del triangulo es: " + area);
+            return;
+        }
+    
+        static void areaTrapecio(){
+            double area;
+            area = (forma1.getBase1()+forma1.getBase2())*forma1.getAltura()/2;
+            System.out.println("El area del trapecio es: " + area);
+            return;
+        }
+        
+        private static int opcion;
+        private static boolean control = true;
+        static formas forma1 = new formas(0, 0, 0, 0, 0);
+        static Scanner input = new Scanner(System.in);
+    
+        public static void main(String[] args) {
+            
+            while (control == true) {
+                System.out.println("Bienvenido, por favor seleccione la operacion a realizar\n" +
+                "1. Calcular area del rectangulo\n" + "2. Calcular area del triangulo\n" +
+                "3. Calcular area del trapecio\n" + "0. Salir\n");
+    
+                opcion = input.nextInt();
+    
+                switch (opcion) {
+                    case 1:
+                        System.out.println("Por favor ingrese los datos necesarios\n" +
+                        "Base del rectangulo: ");
+                        forma1.setBase(input.nextDouble());
+                        System.out.println("Altura del rectangulo: ");
+                        forma1.setAltura(input.nextDouble());
+                        areaRectangulo();
+                        break;
+    
+                    case 2:
+                        System.out.println("Por favor ingrese los datos necesarios\n" +
+                        "Base del triangulo: ");
+                        forma1.setBase(input.nextDouble());
+                        System.out.println("Altura del triangulo: ");
+                        forma1.setAltura(input.nextDouble());
+                        areaTriangulo();
+                        break;  
+                        
+                    case 3:
+                        System.out.println("Por favor ingrese los datos necesarios\n" +
+                        "Base mayor del trapecio: ");
+                        forma1.setBase1(input.nextDouble());
+                        System.out.println("Base menor del trapecio: ");
+                        forma1.setBase2(input.nextDouble());
+                        System.out.println("Altura del trapecio: ");
+                        forma1.setAltura(input.nextDouble());
+                        areaTrapecio();
+                        break;
+    
+                    case 0:
+                        control = false;
+                        break;
+                
+                    default:
+                        System.out.println("La opcion elegida no existe");
+                        break;
+                }
+            }
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 10
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class cuenta {
+        private String titular;
+        private double cantidad;
+        public cuenta(String titular, double cantidad) {
+            this.titular = titular;
+            this.cantidad = cantidad;
+        }
+        public String getTitular() {
+            return titular;
+        }
+        public void setTitular(String titular) {
+            this.titular = titular;
+        }
+        public double getCantidad() {
+            return cantidad;
+        }
+        public void setCantidad(double cantidad) {
+            this.cantidad = cantidad;
+        }
+        
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#2 punto 10
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    import clases.cuenta;
+    
+    public class punto10 {
+    
+        static void realizarRetiro(double retiro){
+            if (retiro > cuenta1.getCantidad()) {
+                System.out.print("El valor a retirar supera la cantidad que posee actualmente");
+                return;
+            } else {
+                cuenta1.setCantidad(cuenta1.getCantidad() - retiro);
+                System.out.println("Retirando " + retiro + "$ Por favor espere\n" +
+                cuenta1.getCantidad() + "$ restantes en su cuenta\n");
+                return;
+            }
+        }
+    
+        static void realizarIngreso(double ingreso){
+            if (ingreso <= 0) {
+                System.out.println("El valor a ingresar no es valido");
+                return;
+            } else {
+                cuenta1.setCantidad(ingreso + cuenta1.getCantidad());
+                System.out.println("Depositando " + ingreso + "$ a su cuenta\n" +
+                "Actualmente tiene " + cuenta1.getCantidad() + "$ en su cuenta\n");
+                return;
+            }
+        }
+    
+        static void consultarSaldo(){
+            System.out.println("Actualmente el tirular" + cuenta1.getTitular() + " posee " 
+            + cuenta1.getCantidad() + "$ en su cuenta");
+            return;
+        }
+    
+        private static int opcion;
+        private static double ingreso, retiro;
+        private static boolean control = true;
+        static Scanner input = new Scanner(System.in);
+    
+        static cuenta cuenta1 = new cuenta("Julian Mauricio Correa Martinez", 300000.80);
+    
+        public static void main(String[] args) {
+            
+            while (control == true) {
+                System.out.println("Bienvenido a su banco fiel\n" + "Por favor elija la opcion deseada\n" +
+                "1. Realizar retiro\n" + "2. Realizar ingreso\n" + "3. Consultar saldo\n" +
+                "0. Salir\n");
+    
+                opcion = input.nextInt();
+    
+                switch (opcion) {
+                    case 1:
+                        System.out.println("Por favor ingrese el monto a retirar\n");
+                        retiro = input.nextDouble();
+                        realizarRetiro(retiro);
+                        break;
+    
+                    case 2:
+                        System.out.println("Por favor ingrese el monto a depositar\n");
+                        ingreso = input.nextDouble();
+                        realizarIngreso(ingreso);
+                        break;
+    
+                    case 3:
+                        consultarSaldo();
+                        break;
+    
+                    case 0:
+                        control = false;
+                        break;
+                
+                    default:
+                        System.out.println("La opcion elegida no existe");
+                        break;
+                }
+            }
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Realizar el taller #3 de PSeInt en Java</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#3 punto 1
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    /**
+    * punto1
+    */
+   public class punto1 {
+       private static String figura = "";
+   
+       public static void main(String[] args) {
+   
+           for(int i = 1; i <= 10; i++){
+               figura = "*".concat(figura);
+               System.out.println(figura);
+           }
+       }
+   }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#3 punto 2
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+
+    public class punto2 {
+
+        private static boolean control = true;
+        private static String figura = "        ";
+        private static int incremento, i;
+    
+        public static void main(String[] args) {
+            
+            while (control == true) {
+                figura = figura.concat("*");
+                System.out.println(figura);
+                incremento = incremento + 1;
+                i = 9;
+    
+                if (incremento >= 1) {
+                    figura = figura.substring(1, i);
+                    i--;
+                }
+                if (incremento == 9) {
+                    control = false;
+                }
+            }
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#3 punto 3
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    public class punto3 {
+        public static void main(String[] args) {
+            int max=20;
+            int j=1,k=0;
+     
+     
+            System.out.println();
+            for(int i=0;i<=max;i+=2)
+            {
+                int spc=(5+(int)Math.ceil(max/2)-j);
+                String spaces=new String(new char[spc]).replace("\0"," ");
+                String asteri=new String(new char[i+1]).replace("\0","*");
+                System.out.println(spaces+asteri);
+                j++;
+            }
+     
+            if(max>=7)
+            {
+                int spc=(5+(int)Math.ceil(max/2)-2);
+                String spaces=new String(new char[spc]).replace("\0"," ");
+                String asteri=new String(new char[3]).replace("\0","*");
+                System.out.println(spaces+asteri);
+                System.out.println(spaces+asteri);
+            }
+            System.out.println();
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#3 punto 4
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    public class punto4 {
+        private static int num, resultado;
+        static Scanner input = new Scanner(System.in);
+    
+        public static void main(String[] args) {
+    
+            System.out.println("Por favor ingrese un numero a multiplicar");
+            num = input.nextInt();
+    
+            for(int i = 1; i <= 10; i++){
+                resultado = i * num;
+                System.out.println(i + " * " + num + " = " + resultado);
+            }
+    
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 5
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    /**
+     * persona
+     */
+    public class persona {
+        private String nombre;
+    
+        public persona(String nombre) {
+            this.nombre = nombre;
+        }
+    
+        public String getNombre() {
+            return nombre;
+        }
+    
+        public void setNombre(String nombre) {
+            this.nombre = nombre;
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#3 punto 5
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    import clases.persona;
+    
+    public class punto5 {
+    
+        private static boolean control = true, nombreCapturado = false;
+        private static int opcion;
+        static Scanner input = new Scanner(System.in);
+    
+        static persona persona1 = new persona("");
+    
+        public static void main(String[] args) {
+            
+            while (control == true) {
+                System.out.println("Bienvenido al sistema, elija una opcion: \n" +
+                "1. Capturar nombre\n" + "2. Saludar persona\n" + "3. Salir sistema");
+    
+                opcion = input.nextInt();
+    
+                switch (opcion) {
+                    case 1:
+                        System.out.println("¿Como te llamas?");
+                        persona1.setNombre(input.next());
+                        nombreCapturado = true;
+                        break;
+                    case 2:
+                        if (nombreCapturado == true) {
+                            System.out.println("Hola " + persona1.getNombre());
+                        } else {
+                            System.out.println("Para saludarte primero debes de capturar tu nombre");
+                        }
+                        break;
+                    case 3:
+                        System.out.println("Hasta luego");
+                        control = false;
+                
+                    default:
+                        System.out.println("la opcion elegida no existe");
+                        break;
+                }
+    
+            }
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 6
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class contacto {
+        private String nombre, telefono, organizacion;
+    
+        public contacto(String nombre, String telefono, String organizacion) {
+            this.nombre = nombre;
+            this.telefono = telefono;
+            this.organizacion = organizacion;
+        }
+    
+        public String getNombre() {
+            return nombre;
+        }
+    
+        public void setNombre(String nombre) {
+            this.nombre = nombre;
+        }
+    
+        public String getTelefono() {
+            return telefono;
+        }
+    
+        public void setTelefono(String telefono) {
+            this.telefono = telefono;
+        }
+    
+        public String getOrganizacion() {
+            return organizacion;
+        }
+    
+        public void setOrganizacion(String organizacion) {
+            this.organizacion = organizacion;
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#3 punto 6
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    import clases.contacto;
+    
+    public class punto6 {
+    
+        static int añadirContacto(int i, String nombre, String telefono, String organizacion){
+            int numContac = 0;
+            if (telefono.equals(contacto1.getTelefono()) | telefono.equals(contacto2.getTelefono()) | telefono.equals(contacto3.getTelefono())) {
+                System.out.println("El numero ingresado ya existe");
+                numContac = 1-i;
+                return numContac;
+            } else {
+                if (contacto1.getNombre().equals("")) {
+                    contacto1.setNombre(nombre);
+                    contacto1.setTelefono(telefono);
+                    contacto1.setOrganizacion(organizacion);
+                    numContac = 1+i;
+                    return numContac;
+                } else {
+                    if (contacto2.getNombre().equals("")) {
+                        contacto2.setNombre(nombre);
+                        contacto2.setTelefono(telefono);
+                        contacto2.setOrganizacion(organizacion);
+                        numContac = 1+i;
+                        return numContac;
+                    } else {
+                        if (contacto3.getNombre().equals("")) {
+                            contacto3.setNombre(nombre);
+                            contacto3.setTelefono(telefono);
+                            contacto3.setOrganizacion(organizacion);
+                            numContac = 1+i;
+                            return numContac;
+                        } else {
+                            System.out.println("Ya no se puede agregar mas contactos");
+                        }
+                    }
+                }
+            }
+            return numContac;
+        }
+    
+        static void buscarContacto(String nombre){
+            if (nombre.equals(contacto1.getNombre())) {
+                System.out.println(contacto1.getNombre() + " " + contacto1.getTelefono() + " " + contacto1.getOrganizacion());
+                return;
+            } else {
+                if (nombre.equals(contacto2.getNombre())) {
+                    System.out.println(contacto2.getNombre() + " " + contacto2.getTelefono() + " " + contacto2.getOrganizacion());
+                    return;
+                } else {
+                    if (nombre.equals(contacto3.getNombre())) {
+                        System.out.println(contacto3.getNombre() + " " + contacto3.getTelefono() + " " + contacto3.getOrganizacion());
+                        return;
+                    } else {
+                        System.out.println("El contacto no existe");
+                        return;
+                    }
+                }
+            }
+        }
+    
+        static int eliminarContacto(int i, String telefono){
+            int numContac = 0;
+            if (telefono.equals(contacto1.getTelefono())) {
+                contacto1.setNombre("");
+                contacto1.setOrganizacion("");
+                contacto1.setTelefono("");
+                numContac = 1-i;
+                return numContac;
+            } else {
+                if (telefono.equals(contacto2.getTelefono())) {
+                    contacto2.setNombre("");
+                    contacto2.setOrganizacion("");
+                    contacto2.setTelefono("");
+                    numContac = 1-i;
+                    return numContac;
+                } else {
+                    if (telefono.equals(contacto3.getTelefono())) {
+                        contacto3.setNombre("");
+                        contacto3.setOrganizacion("");
+                        contacto3.setTelefono("");
+                        numContac = 1-i;
+                        return numContac;
+                    } else {
+                        System.out.println("El numero ingresado no existe");
+                        return numContac;
+                    }
+                }
+            }
+        }
+    
+        private static boolean control = true;
+        private static int i = 0, opcion;
+        private static String nombre, telefono, organizacion;
+        static Scanner input = new Scanner(System.in);
+    
+        static contacto contacto1 = new contacto("", "", "");
+        static contacto contacto2 = new contacto("", "", "");
+        static contacto contacto3 = new contacto("", "", "");
+        
+        public static void main(String[] args) {
+            
+            while (control == true) {
+                System.out.println("Bienvenido a sus contactos\n" + "1. Añadir contacto\n" +
+                "2. Buscar contacto\n" + "3. Eliminar contacto\n" + "0. Salir\n");
+    
+                opcion = input.nextInt();
+    
+                switch (opcion) {
+                    case 1:
+                        if (i >= 3) {
+                            System.out.println("Ya no se pueden agregar mas contactos\n");
+                        } else {
+                            System.out.println("Nombre contacto: ");
+                            nombre = input.next();
+                            System.out.println("Telefono: ");
+                            telefono = input.next();
+                            System.out.println("Organizacion: ");
+                            organizacion = input.next();
+                            i = añadirContacto(i, nombre, telefono, organizacion);
+                        }
+                        break;
+    
+                    case 2:
+                        System.out.println("Ingrese el nombre del contacto que desea buscar: ");
+                        nombre = input.next();
+                        buscarContacto(nombre);
+                        break;
+    
+                    case 3:
+                        System.out.println("Ingrese el numero de telefono que desea eliminar");
+                        telefono = input.next();
+                        i = eliminarContacto(i, telefono);
+                        break;
+    
+                    case 0:
+                        System.out.println("Hasta luego");
+                        control = false;
+                        break;
+                
+                    default:
+                        System.out.println("La opcion elegida no existe");
+                        break;
+                }
+            }
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 7
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class vehiculo {
+        private String placa, marca, telefono, nombre;
+    
+        public vehiculo(String placa, String marca, String telefono, String nombre) {
+            this.placa = placa;
+            this.marca = marca;
+            this.telefono = telefono;
+            this.nombre = nombre;
+        }
+    
+        public String getPlaca() {
+            return placa;
+        }
+    
+        public void setPlaca(String placa) {
+            this.placa = placa;
+        }
+    
+        public String getMarca() {
+            return marca;
+        }
+    
+        public void setMarca(String marca) {
+            this.marca = marca;
+        }
+    
+        public String getTelefono() {
+            return telefono;
+        }
+    
+        public void setTelefono(String telefono) {
+            this.telefono = telefono;
+        }
+    
+        public String getNombre() {
+            return nombre;
+        }
+    
+        public void setNombre(String nombre) {
+            this.nombre = nombre;
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#3 punto 7
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    import clases.vehiculo;
+    
+    public class punto7 {
+    
+        static boolean ingresarVehiculo(boolean confirma, String placa, String marca, String telefono, String nombre){
+            boolean con = false;
+            if (placa.equals(vehiculo1.getPlaca()) | placa.equals(vehiculo2.getPlaca()) | placa.equals(vehiculo3.getPlaca()) | placa.equals(vehiculo4.getPlaca()) | placa.equals(vehiculo5.getPlaca())) {
+                System.out.println("El vehiculo ingresado ya existe");
+                con = false;
+                return con;
+            } else {
+                if (vehiculo1.getPlaca().equals("")) {
+                    vehiculo1.setPlaca(placa);
+                    vehiculo1.setMarca(marca);
+                    vehiculo1.setTelefono(telefono);
+                    vehiculo1.setNombre(nombre);
+                    System.out.print("Se ha añadido el vehiculo correctamente\n" + "Placa: " + placa + "\n" +
+                    "Marca: " + marca + "\n" + "Telefono: " + telefono + "\n" + "Nombre: " + nombre + "\n");
+                    con = true;
+                    return con;
+                } else {
+                    if (vehiculo2.getPlaca().equals("")) {
+                        vehiculo2.setPlaca(placa);
+                        vehiculo2.setMarca(marca);
+                        vehiculo2.setTelefono(telefono);
+                        vehiculo2.setNombre(nombre);
+                        System.out.print("Se ha añadido el vehiculo correctamente\n" + "Placa: " + placa + "\n" +
+                        "Marca: " + marca + "\n" + "Telefono: " + telefono + "\n" + "Nombre: " + nombre + "\n");
+                        con = true;
+                        return con;
+                    } else {
+                        if (vehiculo3.getPlaca().equals("")) {
+                            vehiculo3.setPlaca(placa);
+                            vehiculo3.setMarca(marca);
+                            vehiculo3.setTelefono(telefono);
+                            vehiculo3.setNombre(nombre);
+                            System.out.print("Se ha añadido el vehiculo correctamente\n" + "Placa: " + placa + "\n" +
+                            "Marca: " + marca + "\n" + "Telefono: " + telefono + "\n" + "Nombre: " + nombre + "\n");
+                            con = true;
+                            return con;
+                        } else {
+                            if (vehiculo4.getPlaca().equals("")) {
+                                vehiculo4.setPlaca(placa);
+                                vehiculo4.setMarca(marca);
+                                vehiculo4.setTelefono(telefono);
+                                vehiculo4.setNombre(nombre);
+                                System.out.print("Se ha añadido el vehiculo correctamente\n" + "Placa: " + placa + "\n" +
+                                "Marca: " + marca + "\n" + "Telefono: " + telefono + "\n" + "Nombre: " + nombre + "\n");
+                                con = true;
+                                return con;
+                            } else {
+                                if (vehiculo5.getPlaca().equals("")) {
+                                    vehiculo5.setPlaca(placa);
+                                    vehiculo5.setMarca(marca);
+                                    vehiculo5.setTelefono(telefono);
+                                    vehiculo5.setNombre(nombre);
+                                    System.out.print("Se ha añadido el vehiculo correctamente\n" + "Placa: " + placa + "\n" +
+                                    "Marca: " + marca + "\n" + "Telefono: " + telefono + "\n" + "Nombre: " + nombre + "\n");
+                                    con = true;
+                                    return con;
+                                } else {
+                                    System.out.println("No se pueden ingresar mas vehiculos");
+                                    con = false;
+                                    return con;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        static boolean retirarVehiculo(Boolean confirma, String placa){
+            boolean con = false;
+            if (placa.equals(vehiculo1.getPlaca())) {
+                System.out.print("Se ha eliminado el vehiculo correctamente\n" + "Placa: " + vehiculo1.getPlaca() + "\n" +
+                "Marca: " + vehiculo1.getMarca() + "\n" + "Telefono: " + vehiculo1.getTelefono() + "\n" + "Nombre: " + vehiculo1.getNombre() + "\n");
+                vehiculo1.setPlaca("");
+                vehiculo1.setMarca("");
+                vehiculo1.setTelefono("");
+                vehiculo1.setNombre("");
+                con = true;
+                return con;
+            } else {
+                if (placa.equals(vehiculo2.getPlaca())) {
+                    System.out.print("Se ha eliminado el vehiculo correctamente\n" + "Placa: " + vehiculo2.getPlaca() + "\n" +
+                    "Marca: " + vehiculo2.getMarca() + "\n" + "Telefono: " + vehiculo2.getTelefono() + "\n" + "Nombre: " + vehiculo2.getNombre() + "\n");
+                    vehiculo2.setPlaca("");
+                    vehiculo2.setMarca("");
+                    vehiculo2.setTelefono("");
+                    vehiculo2.setNombre("");
+                    con = true;
+                    return con;
+                } else {
+                    if (placa.equals(vehiculo3.getPlaca())) {
+                        System.out.print("Se ha eliminado el vehiculo correctamente\n" + "Placa: " + vehiculo3.getPlaca() + "\n" +
+                        "Marca: " + vehiculo3.getMarca() + "\n" + "Telefono: " + vehiculo3.getTelefono() + "\n" + "Nombre: " + vehiculo3.getNombre() + "\n");
+                        vehiculo3.setPlaca("");
+                        vehiculo3.setMarca("");
+                        vehiculo3.setTelefono("");
+                        vehiculo3.setNombre("");
+                        con = true;
+                        return con;
+                    } else {
+                        if (placa.equals(vehiculo4.getPlaca())) {
+                            System.out.print("Se ha eliminado el vehiculo correctamente\n" + "Placa: " + vehiculo4.getPlaca() + "\n" +
+                            "Marca: " + vehiculo4.getMarca() + "\n" + "Telefono: " + vehiculo4.getTelefono() + "\n" + "Nombre: " + vehiculo4.getNombre() + "\n");
+                            vehiculo4.setPlaca("");
+                            vehiculo4.setMarca("");
+                            vehiculo4.setTelefono("");
+                            vehiculo4.setNombre("");
+                            con = true;
+                            return con;
+                        } else {
+                            if (placa.equals(vehiculo5.getPlaca())) {
+                                System.out.print("Se ha eliminado el vehiculo correctamente\n" + "Placa: " + vehiculo5.getPlaca() + "\n" +
+                                "Marca: " + vehiculo5.getMarca() + "\n" + "Telefono: " + vehiculo5.getTelefono() + "\n" + "Nombre: " + vehiculo5.getNombre() + "\n");
+                                vehiculo5.setPlaca("");
+                                vehiculo5.setMarca("");
+                                vehiculo5.setTelefono("");
+                                vehiculo5.setNombre("");
+                                con = true;
+                                return con;
+                            } else {
+                                System.out.println("El vehiculo no existe");
+                                con = false;
+                                return con;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        static void buscarVehiculo(String placa){
+            if (placa.equals(vehiculo1.getPlaca())) {
+                System.out.print("El vehiculo tiene la siguiente informacion\n" + "Placa: " + vehiculo1.getPlaca() + "\n" +
+                "Marca: " + vehiculo1.getMarca() + "\n" + "Telefono: " + vehiculo1.getTelefono() + "\n" + "Nombre: " + vehiculo1.getNombre() + "\n");
+                return;
+            } else {
+                if (placa.equals(vehiculo2.getPlaca())) {
+                    System.out.print("El vehiculo tiene la siguiente informacion\n" + "Placa: " + vehiculo2.getPlaca() + "\n" +
+                    "Marca: " + vehiculo2.getMarca() + "\n" + "Telefono: " + vehiculo2.getTelefono() + "\n" + "Nombre: " + vehiculo2.getNombre() + "\n");
+                    return;
+                } else {
+                    if (placa.equals(vehiculo3.getPlaca())) {
+                        System.out.print("El vehiculo tiene la siguiente informacion\n" + "Placa: " + vehiculo3.getPlaca() + "\n" +
+                        "Marca: " + vehiculo3.getMarca() + "\n" + "Telefono: " + vehiculo3.getTelefono() + "\n" + "Nombre: " + vehiculo3.getNombre() + "\n");
+                        return;
+                    } else {
+                        if (placa.equals(vehiculo4.getPlaca())) {
+                            System.out.print("El vehiculo tiene la siguiente informacion\n" + "Placa: " + vehiculo4.getPlaca() + "\n" +
+                            "Marca: " + vehiculo4.getMarca() + "\n" + "Telefono: " + vehiculo4.getTelefono() + "\n" + "Nombre: " + vehiculo4.getNombre() + "\n");
+                            return;
+                        } else {
+                            if (placa.equals(vehiculo5.getPlaca())) {
+                                System.out.print("El vehiculo tiene la siguiente informacion\n" + "Placa: " + vehiculo5.getPlaca() + "\n" +
+                                "Marca: " + vehiculo5.getMarca() + "\n" + "Telefono: " + vehiculo5.getTelefono() + "\n" + "Nombre: " + vehiculo5.getNombre() + "\n");
+                                return;
+                            } else {
+                                System.out.println("El vehiculo no se encuentra registrado");
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        private static String placa, marca, telefono, nombre;
+        private static int opcion, i=0;
+        private static boolean control = true, confirma;
+        static Scanner input = new Scanner(System.in);
+    
+        static vehiculo vehiculo1 = new vehiculo("", "", "", "");
+        static vehiculo vehiculo2 = new vehiculo("", "", "", "");
+        static vehiculo vehiculo3 = new vehiculo("", "", "", "");
+        static vehiculo vehiculo4 = new vehiculo("", "", "", "");
+        static vehiculo vehiculo5 = new vehiculo("", "", "", "");
+    
+        public static void main(String[] args) {
+            
+            while (control == true) {
+                System.out.println("Bienvenido al parqueadero El guardian\n" + "1. Ingresar vehiculo\n" +
+                "2. Retirar vehiculo\n" + "3. Consultar vehiculo\n" + "0. Salir\n");
+    
+                opcion = input.nextInt();
+    
+                switch (opcion) {
+                    case 1:
+                        if (i >= 5) {
+                            System.out.println("Ya no se pueden ingresar mas vehiculos");
+                        } else {
+                            System.out.println("Por favor ingrese los siguiente datos: \n" +
+                            "Numero de placa: \n");
+                            placa = input.next();
+                            System.out.println("Marca del vehiculo: \n");
+                            marca = input.next();
+                            System.out.println("Nombre del propietario: \n");
+                            nombre = input.next();
+                            System.out.println("telefono del propietario: \n");
+                            telefono = input.next();
+                            confirma = ingresarVehiculo(confirma, placa, marca, telefono, nombre);
+                            if (confirma == true) {
+                                i = i + 1;
+                                confirma = false;
+                            }
+                        }
+                        break;
+                    case 2:
+                        System.out.println("Ingrese la placa del vehiculo que desea retirar: \n");
+                        placa = input.next();
+                        confirma = retirarVehiculo(confirma, placa);
+                        if (confirma == true) {
+                            i = i - 1;
+                            confirma = false;
+                        }
+                        break;
+                    case 3:
+                        System.out.println("Ingrese la placa del vehiculo que desea consultar: \n");
+                        placa = input.next();
+                        buscarVehiculo(placa);
+                        break;
+                    case 0:
+                        System.out.println("Hasta luego");
+                        control = false;
+                        break;
+                
+                    default:
+                        System.out.println("La opcion elegida no existe");
+                        break;
+                }
+            }
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item" style="background-color: red;">
+                                <div class="accordion-item-header">
+                                    Clase usada por el punto 8
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    package clases;
+
+    public class examen {
+        private boolean aprovado, presentado;
+        private String usuario;
+        public examen(boolean aprovado, boolean presentado, String usuario) {
+            this.aprovado = aprovado;
+            this.presentado = presentado;
+            this.usuario = usuario;
+        }
+        public boolean isAprovado() {
+            return aprovado;
+        }
+        public void setAprovado(boolean aprovado) {
+            this.aprovado = aprovado;
+        }
+        public boolean isPresentado() {
+            return presentado;
+        }
+        public void setPresentado(boolean presentado) {
+            this.presentado = presentado;
+        }
+        public String getUsuario() {
+            return usuario;
+        }
+        public void setUsuario(String usuario) {
+            this.usuario = usuario;
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#3 punto 8
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    import clases.examen;
+    
+    public class punto8 {
+    
+        static boolean ingresarUsuario(boolean aprovado, boolean presentado, String usuario){
+            boolean con = false;
+            if (usuario.equals(examen1.getUsuario()) | usuario.equals(examen2.getUsuario()) | usuario.equals(examen3.getUsuario()) | usuario.equals(examen4.getUsuario()) | usuario.equals(examen5.getUsuario()) | usuario.equals(examen6.getUsuario()) | usuario.equals(examen7.getUsuario()) | usuario.equals(examen8.getUsuario())) {
+                System.out.println("Este usuario ya existe\n");
+                con = false;
+                return con;
+            } else {
+                if (examen1.getUsuario().equals("")) {
+                    examen1.setAprovado(aprovado);
+                    examen1.setPresentado(presentado);
+                    examen1.setUsuario(usuario);
+                    System.out.println("Se ha añadido el usuario correctamente: \n" + "Usuario: " + usuario + "\n");
+                    con = true;
+                    return con;
+                } else {
+                    if (examen2.getUsuario().equals("")) {
+                        examen2.setAprovado(aprovado);
+                        examen2.setPresentado(presentado);
+                        examen2.setUsuario(usuario);
+                        System.out.println("Se ha añadido el usuario correctamente: \n" + "Usuario: " + usuario + "\n");
+                        con = true;
+                        return con;
+                    } else {
+                        if (examen3.getUsuario().equals("")) {
+                            examen3.setAprovado(aprovado);
+                            examen3.setPresentado(presentado);
+                            examen3.setUsuario(usuario);
+                            System.out.println("Se ha añadido el usuario correctamente: \n" + "Usuario: " + usuario + "\n");
+                            con = true;
+                            return con;
+                        } else {
+                            if (examen4.getUsuario().equals("")) {
+                                examen4.setAprovado(aprovado);
+                                examen4.setPresentado(presentado);
+                                examen4.setUsuario(usuario);
+                                System.out.println("Se ha añadido el usuario correctamente: \n" + "Usuario: " + usuario + "\n");
+                                con = true;
+                                return con;
+                            } else {
+                                if (examen5.getUsuario().equals("")) {
+                                    examen5.setAprovado(aprovado);
+                                    examen5.setPresentado(presentado);
+                                    examen5.setUsuario(usuario);
+                                    System.out.println("Se ha añadido el usuario correctamente: \n" + "Usuario: " + usuario + "\n");
+                                    con = true;
+                                    return con;
+                                } else {
+                                    if (examen6.getUsuario().equals("")) {
+                                        examen6.setAprovado(aprovado);
+                                        examen6.setPresentado(presentado);
+                                        examen6.setUsuario(usuario);
+                                        System.out.println("Se ha añadido el usuario correctamente: \n" + "Usuario: " + usuario + "\n");
+                                        con = true;
+                                        return con;
+                                    } else {
+                                        if (examen7.getUsuario().equals("")) {
+                                            examen7.setAprovado(aprovado);
+                                            examen7.setPresentado(presentado);
+                                            examen7.setUsuario(usuario);
+                                            System.out.println("Se ha añadido el usuario correctamente: \n" + "Usuario: " + usuario + "\n");
+                                            con = true;
+                                            return con;
+                                        } else {
+                                            if (examen8.getUsuario().equals("")) {
+                                                examen8.setAprovado(aprovado);
+                                                examen8.setPresentado(presentado);
+                                                examen8.setUsuario(usuario);
+                                                System.out.println("Se ha añadido el usuario correctamente: \n" + "Usuario: " + usuario + "\n");
+                                                con = true;
+                                                return con;
+                                            } else {
+                                                System.out.println("No se pueden ingresar mas vehiculos");
+                                                con = false;
+                                                return con;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        static void consultarPresentados(){
+            String [] vectorSi = new String [8];
+            String [] vectorNo = new String [8];
+            int i=0;
+            int j=0;
+            boolean control = false;
+            for (int k = 0; k <=8; k++) {
+                if (examen1.getUsuario().equals("") & examen2.getUsuario().equals("") & examen3.getUsuario().equals("") & examen4.getUsuario().equals("") & examen5.getUsuario().equals("") & examen6.getUsuario().equals("") & examen7.getUsuario().equals("") & examen8.getUsuario().equals("")) {
+                    System.out.println("No hay ningun usuario en el sistema\n");
+                    control = false;
+                    return;
+                } else {
+                    if (examen1.isPresentado() == true & examen1.getUsuario() != "" & k == 0) {
+                        vectorSi[i] = examen1.getUsuario();
+                        i++;
+                    } else {
+                        if (examen2.isPresentado() == true & examen2.getUsuario() != "" & k == 1) {
+                            vectorSi[i] = examen2.getUsuario();
+                            i++;
+                        } else {
+                            if (examen3.isPresentado() == true & examen3.getUsuario() != "" & k == 2) {
+                                vectorSi[i] = examen3.getUsuario();
+                                i++;
+                            } else {
+                                if (examen4.isPresentado() == true & examen4.getUsuario() != "" & k == 3) {
+                                    vectorSi[i] = examen4.getUsuario();
+                                    i++;
+                                } else {
+                                    if (examen5.isPresentado() == true & examen5.getUsuario() != "" & k == 4) {
+                                        vectorSi[i] = examen5.getUsuario();
+                                        i++;
+                                    } else {
+                                        if (examen6.isPresentado() == true & examen6.getUsuario() != "" & k == 5) {
+                                            vectorSi[i] = examen6.getUsuario();
+                                            i++;
+                                        } else {
+                                            if (examen7.isPresentado() == true & examen7.getUsuario() != "" & k == 6) {
+                                                vectorSi[i] = examen7.getUsuario();
+                                                i++;
+                                            } else {
+                                                if (examen8.isPresentado() == true & examen8.getUsuario() != "" & k == 7) {
+                                                    vectorSi[i] = examen8.getUsuario();
+                                                    i++;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            for (int k = 0; k <=8; k++) {
+                if (examen1.getUsuario().equals("") & examen2.getUsuario().equals("") & examen3.getUsuario().equals("") & examen4.getUsuario().equals("") & examen5.getUsuario().equals("") & examen6.getUsuario().equals("") & examen7.getUsuario().equals("") & examen8.getUsuario().equals("")) {
+                    control = false;
+                    return;
+                } else {
+                    if (examen1.isPresentado() == false & examen1.getUsuario() != "" & k == 0) {
+                        vectorNo[i] = examen1.getUsuario();
+                        i++;
+                    } else {
+                        if (examen2.isPresentado() == false & examen2.getUsuario() != "" & k == 1) {
+                            vectorNo[i] = examen2.getUsuario();
+                            i++;
+                        } else {
+                            if (examen3.isPresentado() == false & examen3.getUsuario() != "" & k == 2) {
+                                vectorNo[i] = examen3.getUsuario();
+                                i++;
+                            } else {
+                                if (examen4.isPresentado() == false & examen4.getUsuario() != "" & k == 3) {
+                                    vectorNo[i] = examen4.getUsuario();
+                                    i++;
+                                } else {
+                                    if (examen5.isPresentado() == false & examen5.getUsuario() != "" & k == 4) {
+                                        vectorNo[i] = examen5.getUsuario();
+                                        i++;
+                                    } else {
+                                        if (examen6.isPresentado() == false & examen6.getUsuario() != "" & k == 5) {
+                                            vectorNo[i] = examen6.getUsuario();
+                                            i++;
+                                        } else {
+                                            if (examen7.isPresentado() == false & examen7.getUsuario() != "" & k == 6) {
+                                                vectorNo[i] = examen7.getUsuario();
+                                                i++;
+                                            } else {
+                                                if (examen8.isPresentado() == false & examen8.getUsuario() != "" & k == 7) {
+                                                    vectorNo[i] = examen8.getUsuario();
+                                                    i++;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            control = true;
+            if (control == true) {
+                System.out.println("Esta es una lista de los usuarios que aprovaron el curso: \n");
+                for (i=0; i<vectorSi.length; i++) {
+                    if (vectorSi[i] != null) {
+                        System.out.println(vectorSi[i]);
+                    }
+                }
+                System.out.println("Y esta de los usuarios que no aprovaron el curso: \n");
+                for (j=0; j<vectorNo.length; j++) {
+                    if (vectorNo[j] != null) {
+                        System.out.println(vectorNo[j]);
+                    }
+                }
+            }
+            return;
+        }
+    
+        static void consultarResultados(){
+            String [] vectorSi = new String [8];
+            String [] vectorNo = new String [8];
+            int i=0;
+            int j=0;
+            for (int k = 0; k <=8; k++) {
+                if (examen1.getUsuario().equals("") & examen2.getUsuario().equals("") & examen3.getUsuario().equals("") & examen4.getUsuario().equals("") & examen5.getUsuario().equals("") & examen6.getUsuario().equals("") & examen7.getUsuario().equals("") & examen8.getUsuario().equals("")) {
+                    System.out.println("No hay ningun usuario en el sistema\n");
+                    return;
+                } else {
+                    if (examen1.isAprovado() == true  & examen1.getUsuario() != "" & k == 0) {
+                        vectorSi[i] = examen1.getUsuario();
+                        i++;
+                    } else {
+                        if (examen2.isAprovado() == true & examen1.getUsuario() != "" & k == 1) {
+                            vectorSi[i] = examen2.getUsuario();
+                            i++;
+                        } else {
+                            if (examen3.isAprovado() == true & examen1.getUsuario() != "" & k == 2) {
+                                vectorSi[i] = examen3.getUsuario();
+                                i++;
+                            } else {
+                                if (examen4.isAprovado() == true & examen1.getUsuario() != "" & k == 3) {
+                                    vectorSi[i] = examen4.getUsuario();
+                                    i++;
+                                } else {
+                                    if (examen5.isAprovado() == true & examen1.getUsuario() != "" & k == 4) {
+                                        vectorSi[i] = examen5.getUsuario();
+                                        i++;
+                                    } else {
+                                        if (examen6.isAprovado() == true & examen1.getUsuario() != "" & k == 5) {
+                                            vectorSi[i] = examen6.getUsuario();
+                                            i++;
+                                        } else {
+                                            if (examen7.isAprovado() == true & examen1.getUsuario() != "" & k == 6) {
+                                                vectorSi[i] = examen7.getUsuario();
+                                                i++;
+                                            } else {
+                                                if (examen8.isAprovado() == true & examen1.getUsuario() != "" & k == 7) {
+                                                    vectorSi[i] = examen8.getUsuario();
+                                                    i++;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            for (int k = 0; k <=8; k++) {
+                if (examen1.getUsuario().equals("") & examen2.getUsuario().equals("") & examen3.getUsuario().equals("") & examen4.getUsuario().equals("") & examen5.getUsuario().equals("") & examen6.getUsuario().equals("") & examen7.getUsuario().equals("") & examen8.getUsuario().equals("")) {
+                    return;
+                } else {
+                    if (examen1.isAprovado() == false  & examen1.getUsuario() != "" & k == 0) {
+                        vectorNo[i] = examen1.getUsuario();
+                        i++;
+                    } else {
+                        if (examen2.isAprovado() == false & examen1.getUsuario() != "" & k == 1) {
+                            vectorNo[i] = examen2.getUsuario();
+                            i++;
+                        } else {
+                            if (examen3.isAprovado() == false & examen1.getUsuario() != "" & k == 2) {
+                                vectorNo[i] = examen3.getUsuario();
+                                i++;
+                            } else {
+                                if (examen4.isAprovado() == false & examen1.getUsuario() != "" & k == 3) {
+                                    vectorNo[i] = examen4.getUsuario();
+                                    i++;
+                                } else {
+                                    if (examen5.isAprovado() == false & examen1.getUsuario() != "" & k == 4) {
+                                        vectorNo[i] = examen5.getUsuario();
+                                        i++;
+                                    } else {
+                                        if (examen6.isAprovado() == false & examen1.getUsuario() != "" & k == 5) {
+                                            vectorNo[i] = examen6.getUsuario();
+                                            i++;
+                                        } else {
+                                            if (examen7.isAprovado() == false & examen1.getUsuario() != "" & k == 6) {
+                                                vectorNo[i] = examen7.getUsuario();
+                                                i++;
+                                            } else {
+                                                if (examen8.isAprovado() == false & examen1.getUsuario() != "" & k == 7) {
+                                                    vectorNo[i] = examen8.getUsuario();
+                                                    i++;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            control = true;
+            if (control == true) {
+                System.out.println("Esta es una lista de los usuarios que presentaron el curso: \n");
+                for (i=0; i<vectorSi.length; i++) {
+                    if (vectorSi[i] != null) {
+                        System.out.println(vectorSi[i]);
+                    }
+                }
+                System.out.println("Y esta de los usuarios que no presentaron el curso: \n");
+                for (j=0; j<vectorNo.length; j++) {
+                    if (vectorNo[j] != null) {
+                        System.out.println(vectorNo[j]);
+                    }
+                }
+            }
+            return;
+        }
+    
+        private static String usuario;
+        private static boolean aprovado, presentado, control=true, confirma;
+        private static int opcion, i=0, sino;
+        static Scanner input = new Scanner(System.in);
+    
+        static examen examen1 = new examen(false, false, "");
+        static examen examen2 = new examen(false, false, "");
+        static examen examen3 = new examen(false, false, "");
+        static examen examen4 = new examen(false, false, "");
+        static examen examen5 = new examen(false, false, "");
+        static examen examen6 = new examen(false, false, "");
+        static examen examen7 = new examen(false, false, "");
+        static examen examen8 = new examen(false, false, "");
+    
+        public static void main(String[] args) {
+            
+            while (control == true) {
+                System.out.println("Bienvenido a la escuela automovilistica El Maestro\n" + "1. Ingresar usuario\n" +
+                "2. Consultar presentados\n" + "3. Consultar resultados\n" + "0. Salir\n");
+    
+                opcion = input.nextInt();
+    
+                switch (opcion) {
+                    case 1:
+                        if (i >= 8) {
+                            System.out.println("Ya no se admiten mas usuarios\n");
+                        } else {
+                            System.out.println("Por favor ingrese los siguientes datos: \n" +
+                            "Nombre de usuario: \n");
+                            usuario = input.next();
+                            System.out.println("¿El usuario aprovo el curso?\n" + "1. Si\n" + "2. No\n");
+                            sino = input.nextInt();
+                            if (sino == 1) {
+                                aprovado = true;
+                                sino = 0;
+                            } else {
+                                aprovado = false;
+                                sino = 0;
+                            }
+                            System.out.println("¿El usuario presento el curso?\n" + "1. Si\n" + "2. No\n");
+                            sino = input.nextInt();
+                            if (sino == 1) {
+                                presentado = true;
+                                sino = 0;
+                            } else {
+                                presentado = false;
+                                sino = 0;
+                            }
+                            confirma = ingresarUsuario(aprovado, presentado, usuario);
+                            if (confirma == true) {
+                                i = i + 1;
+                                confirma = false;
+                            }
+                        }
+                        break;
+                    case 2:
+                        System.out.println("Consultando usuarios que presentaron el curso: \n");
+                        consultarPresentados();
+                        break;
+                    case 3:
+                        System.out.println("Consultando usuarios que aprovaron el curso: \n");
+                        consultarResultados();
+                        break;
+                    case 0:
+                        System.out.println("Hasta luego");
+                        control = false;
+                        break;
+                
+                    default:
+                        System.out.println("La opcion elegida no existe");
+                        break;
+                }
+            }
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Realizar el taller #4 de PSeInt en Java</li>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#4 punto 1
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    /**
+     * punto1
+     */
+    public class punto1 {
+        private static int i, j;
+        static String [] vector = new String [5];
+        static Scanner input = new Scanner(System.in);
+    
+        public static void main(String[] args) {
+            
+            for (i = 0; i < vector.length; i++) {
+                System.out.println("Ingrese un numero");
+                vector[i] = input.next();
+            }
+    
+            for (j = 0; j < vector.length; j++) {
+                System.out.println("[" + j + "]" + vector[j]);
+            }
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#4 punto 2
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+
+    import java.util.Scanner;
+
+    public class punto2 {
+    
+        static int[] llenarVector(int[] vector){
+            for (int i = 0; i < vector.length; i++) {
+                vector[i] = (int) (Math.random()*100+1);
+                System.out.println(vector[i]);
+            }
+            return vector;
+        }
+    
+        static int[] ordenarVector(int[] vector, int[] vectorPar, int[] vectorImpar){
+            boolean control = true;
+            while (control == true) {
+                if (vector[i] % 2 == 0) {
+                    vectorPar[i] = vector[i];
+                    i++;
+                } else {
+                    vectorImpar[i] = vector[i];
+                    i++;
+                }
+                if (i >= 20) {
+                    control = false;
+                }
+            }
+            return vector;
+        }
+    
+        static int[] mostrarVector(int[] vector, int[] vectorPar, int[] vectorImpar){
+            System.out.println("Numero par: ");
+            for (int i = 0; i < vectorPar.length; i++) {
+                if (vectorPar[i] != 0) {
+                    System.out.println(vectorPar[i]);
+                }
+            }
+            System.out.println("Numero impar: ");
+            for (int i = 0; i < vectorImpar.length; i++) {
+                if (vectorImpar[i] != 0) {
+                    System.out.println(vectorImpar[i]);
+                }
+            }
+            return vector;
+        }
+    
+        private static int i;
+        static int [] vector = new int [20];
+        static int [] vectorPar = new int [20];
+        static int [] vectorImpar = new int [20];
+        static Scanner input = new Scanner(System.in);
+    
+        public static void main(String[] args) {
+            llenarVector(vector);
+            ordenarVector(vector, vectorPar, vectorImpar);
+            mostrarVector(vector, vectorPar, vectorImpar);
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#4 punto 3
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    public class punto3 {
+
+        public static void numerosPrimos(int n) {
+            int vector[] = new int[n];
+            int posicion = 0;
+        
+            int divisibles;
+            for(int i=0; posicion < n; i++){
+                divisibles = 0;
+                for (int j=1;j<=i;j++) {
+                    if(i % j == 0){
+                        divisibles++;
+                    }
+                }
+                if(divisibles == 2){
+                    vector[posicion] = i;
+                    posicion++;
+                }
+            }
+        
+            for(int i=0; i < vector.length; i++) {
+                System.out.println("" + vector[i]);
+            }
+        }
+        public static void main(String[] args) {
+            numerosPrimos(100);
+        }
+    }
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#4 punto 4
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    public class punto4 {
+
+        static int[][] llenarMostrar(int[][] matriz){
+            for (int x = 0; x < matriz.length; x++) {
+                for (int y = 0; y < matriz[x].length; y++) {
+                    matriz[x][y] = n;
+                    n++;
+                }
+            }
+    
+            for (int x = 0; x < matriz.length; x++) {
+                System.out.print("|");
+                for (int y = 0; y < matriz[x].length; y++) {
+                  System.out.print (matriz[x][y]);
+                  if (y != matriz[x].length-1) System.out.print("\t");
+                }
+                System.out.println("|");
+              }
+            return matriz;
+        }
+    
+        static int[][] ordenarMatriz(int[][] matriz){
+            int t=0;
+            for (int i = 0; i < matriz.length; i++) {
+                for (int j = 0; j < matriz[i].length; j++) {
+                    for (int x = j + 1; x < matriz[i].length; x++) {
+                        if (i == 1 | i == 3) {
+                            if (matriz[i][j] < matriz [i][x]) {
+                                t = matriz[i][j];
+                                matriz[i][j] = matriz[i][x];
+                                matriz[i][x] = t;
+                            }
+                        }
+                    }
+                }
+            }
+            for (int x = 0; x < matriz.length; x++) {
+                System.out.print("|");
+                for (int y = 0; y < matriz[x].length; y++) {
+                  System.out.print (matriz[x][y]);
+                  if (y != matriz[x].length-1) System.out.print("\t");
+                }
+                System.out.println("|");
+              }
+            return matriz;
+        }
+    
+        static int [] vector = new int [20];
+        static int matriz[][] = new int [4][5];
+        static int n = 1;
+    
+        public static void main(String[] args) {
+            
+            llenarMostrar(matriz);
+            ordenarMatriz(matriz);
+    
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codigo">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    Respuesta taller#4 punto 5
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <pre class="language-java">
+<code>
+    import java.util.Scanner;
+
+    public class punto5 {
+    
+        static int[][] llenarMostrar(String[][] matriz, int[][] matrizX){
+            int p = 0, q = 0, j = 0, i = 0;
+            for (int x = 0; x < matriz.length; x++) {
+                j++;
+                i = 0;
+                for (int y = 0; y < matriz[x].length; y++) {
+                    if (y == 0 & x == 0) {
+                        matriz[x][y] = "       ";
+                    } else {
+                        if (x == 0) {
+                            matriz[x][y] = "[    " + p + "    ]";
+                            p++;
+                            j = 0;
+                        } else {
+                            if (y == 0 & x != 0) {
+                                matriz[x][y] = "[  " + q + "  ]";
+                                q++;
+                            } else {
+                                i++;
+                                matriz[x][y] = "[  " + j + " x " + i + "  ]";
+                            }
+                        }
+                    }
+                }
+            }
+    
+            i = 0; 
+            j = 0;
+            for (int x = 0; x < matrizX.length; x++) {
+                j++;
+                i=0;
+                for (int y = 0; y < matrizX[x].length; y++) {
+                    i++;
+                    matrizX[x][y] = i*j;
+                }
+            }
+    
+            for (int x = 0; x < matriz.length; x++) {
+                System.out.print("");
+                for (int y = 0; y < matriz[x].length; y++) {
+                  System.out.print (matriz[x][y]);
+                  if (y != matriz[x].length-1) System.out.print("\t");
+                }
+                System.out.println("");
+              }
+            return matrizX;
+        }
+    
+        static String matriz[][] = new String [11][11];
+        static int matrizX[][] = new int [10][10];
+        private static boolean control=true;
+        private static int opcion, fila, columna;
+        static Scanner input = new Scanner(System.in);
+    
+        public static void main(String[] args) {
+            
+            llenarMostrar(matriz, matrizX);
+    
+            while (control == true) {
+                System.out.println("Elija la opcion deseada: \n" + "1. Conocer resultado\n" +
+                "0. Salir del sistema\n");
+    
+                opcion = input.nextInt();
+    
+                switch (opcion) {
+                    case 1:
+                        System.out.println("Ingrese el numero de la fila y columna de la cual desea conocer el resultado\n" +
+                        "Ejemplo: Fila: 2, Columna: 4\n" + "Fila: \n");
+                        fila = input.nextInt();
+                        System.out.println("Columna: \n");
+                        columna = input.nextInt();
+                        System.out.println(matrizX[fila][columna]);
+                        break;
+                    case 0:
+                        System.out.println("Hasta luego\n");
+                        control = false;
+                        break;
+                
+                    default:
+                        System.out.println("La opcion elegida no existe");
+                        break;
+                }
+            }
+        }
+    }
+    
+</code>
+                                      </pre>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ol>
+            </article>
+        </section>
+        <script src="js/prism.js"></script>
+        <script src="js/efecto.js"></script>
+  </body>
+</html>
