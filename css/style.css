@@ -67,3 +67,6 @@ ul#navigation .cv a    {
 ul#navigation li a{
 	background-size: 50px;
 }
+span {
+    font-family: sans-serif;
+}
